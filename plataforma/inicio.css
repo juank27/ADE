@@ -1,0 +1,12 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+object{
+	width: 100%;
+	border-style: none;
+	position:fixed;
+	overflow:hidden
+	height: 90px;
+}
