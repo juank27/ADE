@@ -3,6 +3,7 @@
 .encabezado{
 	text-align: center;
 	margin-top: 30px;
+	
 }
 
 .ade{
@@ -12,7 +13,7 @@
 .linea{
 	content: '';
 	margin: auto;
-	width: 400px;
+	width: 600px;
 	height: 4px;
 	background: black;
 }
@@ -30,7 +31,7 @@
 .caja_principal{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 	
 
 }
@@ -80,9 +81,11 @@
 	margin-bottom: 20px;
 	font-family: 'Open Sans' sans-serif;
 	color: #FDAD30;
-	text-align: right;
+	text-align: left;
 
 }
+
+
 
 .texto{
 	font-weight: lighter;
@@ -118,7 +121,7 @@
 .simulacro{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 
 }
 
@@ -136,7 +139,9 @@
 
 .titulo_simulacro{
 	margin-bottom: 20px;
+	margin-right: 110px;
 	color: #0499D8;
+	text-align: right;
 }
 
 .t{
