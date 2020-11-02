@@ -2,7 +2,7 @@
 .encabezado{
 	text-align: center;
 	margin-top: 30px;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 	
 }
 .ade{
@@ -86,13 +86,11 @@ body{
 			text-align: center;
 			font-weight: lighter;
 
-			
-				
-			
-			
 		}
 
+		/**Cajas de texto**/
 		input[type=text]{
+
 			border-left: none;
 			border-top: none;
 			border-right: none;
@@ -101,26 +99,31 @@ body{
 			margin-left: 14px;
 			width: 240px;
 			background: #F5F5F5;
-
-
+			outline: none;
 		}
 
+		/**Boton**/
 		input[type=submit]{
+
 			margin-left: 230px;
 			margin-bottom: 50px;
 			border-left: 1px solid #FDAD30;
 			border-top: 1px solid #FDAD30;
 			border-bottom: 4px solid #FDAD30;
 			border-right: 4px solid #FDAD30;
-		     
+			outline: none;
+		     color: #9B9A9A;
 		}
 
-		.w{
+		/**Contenedor de boton**/
+		.contenedor_boton_enviar{
+
 			display: flex;
 			margin-top: 0;
 		}
 
-		fieldset{
+		.sub_caja_1{
+
 			width: 305px;
 			height: 418px;
 			padding: 0 0 10px 0;
@@ -143,12 +146,86 @@ body{
 		
 	}
 
-	.e{
+	.imagen{
 		
 		width: 300px;
 		height: 300px;
 	}
 
+		/**Contenedor azul**/
+		.contenedor_azul{
+			background-color: #0499D8;
+		 	display: flex;
+		 	width: 310px;
+		 	height: 430px;
+		}
+
+		.sub_caja_2{
+			width: 305px;
+			height: 418px;
+			padding: 0 0 10px 0;
+			border:2px solid #0499D8;
+			
+		}
+		.titulo2{
+			color: #0499D8;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 15px;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		.contenedor_text_area{
+			
+		text-align: center;
+		display: flex;
+		
+		}
+
+		.caja_azul{
+			
+			
+			background-color: #0499D8;
+			width: 255px;
+			height: 100px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.contenedor_texto{
+
+			width: 240px;
+			height: 90px;
+			margin-left: -17px;
+			margin-top: -15px;
+			
+		}
+
+		p{
+
+			margin: 0;
+			padding: 0;
+			border:0;
+			font-family: 'Open Sans' sans-serif;
+			font-size: 13px;
+			margin-left: 14px;
+
+		}
+
+		.contenedor_boton{
+
+			display: flex;
+			margin-top: 40px;
+
+		}
+
+		::placeholder {
+
+		 font-family: 'Open Sans' sans-serif;
+		 font-size: 13px;
+		 color: #9B9A9A;
+
+		}		
 
 /**Fin de contenedor**/
 
