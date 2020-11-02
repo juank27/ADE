@@ -7,7 +7,7 @@
 /*encabezzado*/
 
 .encabezado{
-	background-image: url("inicio/fondo.gif");
+	background-image: url("../inicio/fondo.gif");
 	background-size: cover;
 	height: 650px;
 	
