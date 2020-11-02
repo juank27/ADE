@@ -19,8 +19,8 @@
 .linea2{
 	display: flex;
 	justify-content: space-between;
-	width: 80%;
-	margin-left: 140px;
+	width: 85%;
+	margin-left: 110px;
 
 }
 button{
@@ -28,16 +28,17 @@ button{
 	height: 60px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
-	margin-right:10px;
 	outline: none;
 	border: none;
 	margin-left: -5px;
 	margin-top: -5px;
 	cursor: pointer;
+	  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
 }
 .boton{
 	width: 150px;
 	height: 60px;
+	margin-left: 10px;
 	background: #000;
 }
 
