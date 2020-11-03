@@ -38,7 +38,7 @@ main{
   
 }
 /*info institucion */
-.institucion{
+.institucion_I{
   margin-top: -150px;
   text-align: center;
   overflow: hidden;
@@ -49,15 +49,10 @@ main{
 
   
 }
-.contenIns{
-	
-	width: 90%;
+.contenIns_I{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-
-
 }
 .escudo1{
 	margin-left: 100px;
@@ -100,7 +95,7 @@ main{
 
 }
 
-.cua1I{
+.cua1_I{
 
 	margin-top: 20px;
 	height: 245px;
@@ -110,7 +105,7 @@ main{
 	margin-left: 20px
 
 }
-.cua12I{
+.cua12_I{
 
 	margin-top: 20px;
 	height: 245px;
@@ -120,15 +115,15 @@ main{
 	margin-left: 20px
 
 }
-.cua2I{
+.cua2_I{
 
 	height: 250px;
 	width: 560px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top:-10px;
-	margin-left: -10px;
+	margin-top:-20px;
+	margin-left: -20px;
 	background-color: #F5F5F5;
 	box-shadow: 0 0 10px rgb(0,0,0,.4);
 }

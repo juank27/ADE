@@ -23,6 +23,7 @@ img{
 }
 
 .centrado{
+
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -35,6 +36,7 @@ img{
 .lds-circle {
   display: inline-block;
   transform: translateZ(1px);
+  
 }
 .lds-circle > div {
   display: inline-block;
@@ -187,9 +189,11 @@ font-size: 50px;
 	align-items: center;
 }
 .modal{
+	background-size: cover;
 	width: 50%;
 	height: 90%;
-	background:#FDAD30;
+	background-image: url("../inicio/fondo.gif");
+	
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -234,9 +238,10 @@ font-size: 50px;
 	align-items: center;
 }
 .modal1{
+	background-size: cover;
 	width: 50%;
 	height: 90%;
-	background:#FDAD30;
+	background-image: url("../inicio/fondo.gif");
 	text-align: center;
 	display: flex;
 	align-items: center;
