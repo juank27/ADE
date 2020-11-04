@@ -1,0 +1,121 @@
+/********************Inicio sesion*******************************/
+.logoSesion{
+	width: 250px;
+	height: 143px;
+}
+
+/**Contenedor principal**/
+.contenedor_prinSesion{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 60%;
+}
+ 
+/**Formulario**/
+.formularioSesion {
+    background-color: #F5F5F5;
+    width: 67%;
+    height: 53vh;
+    padding: 15px;
+    box-shadow: 10px 10px #E5E4E4;
+}
+
+/**Titulo del formulario**/
+.titulo1Sesion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   	margin-bottom: 0px;
+    padding: 3px;
+}
+.tituloSesion1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   	margin-bottom: 15px;
+    padding: 3px;
+}
+.tituloIniciar {
+	padding: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #0499D8;
+}
+
+input[type=password] {
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 25px; 
+	border-left: none;
+	border-top:4px solid #FDAD30; 
+	border-right: none;
+	border-bottom: 4px solid #FDAD30;
+	margin-bottom: 20px;
+	margin-left: 14px;
+	width: 75%;
+	height: 35px;
+	background: #F5F5F5;
+	outline: none;
+}
+input[type=password] {
+  background-image: url("../sesion/6.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 40px 
+}
+.usuarioo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px; 
+	background-image: url("../sesion/6.png");
+  	background-position: 0px 0px;
+  	background-repeat: no-repeat;
+  	padding-left: 40px 
+}
+input[type=button]{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #0499D8;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.wSesion {
+    display: center;
+    margin-top: 0;
+}
+.ttNoCuenta {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   	margin-bottom: 0px;
+   	mar
+    padding: 3px;
+}
+.linkRegistro{
+	color: #0499D8;
+	margin-left: 2px;
+}
+.imgSesionIzq
+{
+	margin-top: -160px;
+	margin-left: -116px
+}
+.imgSesionDer
+{
+	margin-top: -220px;
+	margin-left: 230px
+}
