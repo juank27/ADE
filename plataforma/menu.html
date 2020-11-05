@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Menú</title>
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="registro.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
 </head>
@@ -152,14 +153,63 @@
 	<div class="modal-container1">
 		<div class="modal1 modal-close1">
 			<span class="close1"> <i class="fas fa-times"></i></span>
-			
-			<img src="sesion/10.png">
-
+			<div class="divImagen">
+				<img src="sesion/9.png" alt="" class="imgRegistroIzq">
+				<img src="sesion/ADE.png" class="logoRegistro">
+				<img src="sesion/10.png" alt="" class="imgRegistroDer">
+			</div>
+			<div class="contenedor_prinRegistro">
+				<form class="formularioRegistro">
+					<p class="tituloRegistrar"><strong>Registrar</strong></p>
+					<p class="titulo1Registro">
+				        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+				    </p>
+				    <div class="directivo">
+				    	<select name="" id="">
+				    		<option value="">Tipo Usuario</option>
+				    		<option value="rector">Rector</option>
+				    		<option value="cooAcademico">Coordinador Academico </option>
+				    		<option value="cooConvivenci">Coordinador Convivencia </option>
+				    	</select>
+				    </div>  
+				    <div class="docente">
+				    	<select name="" id="">
+				    		<option value="">Sel Materias</option>
+				    		<option value="">Matematicas</option>
+				    		<option value="">Español</option>
+				    		<option value="">Sociales</option>
+				    		<option value="">Ingles</option>
+				    	</select>
+				    </div>  
+				    <div class="estudiante">
+				    	<select>
+				    		<option value="">Sexto</option>
+				    		<option value="">Septimo</option>
+				    		<option value="">Octavo</option>
+				    		<option value="">Noveno</option>
+				    		<option value="">Decimo</option>
+				    		<option value="">Once</option>
+				    	</select>
+				    </div>
+				    <div class="datos">
+				    	<input type="text" placeholder="Usuario" class="entrada">
+				    	<input type="text" placeholder="Nombre Completo" class="entrada">
+				    	<input type="text" placeholder="Num Identificacion" class="entrada">
+				    	<input type="text" placeholder="Codigo Institucional" class="entrada">
+				    	<input type="password" placeholder="Contraseña" class="entrada">
+				    	<input type="password" placeholder="Verif contraseña" class="entrada">
+				    </div>
+				    <p class="wRegistro">
+				        <input type="button" class="btn_enviarSesion" value="Continuar" autocomplete="usuario" src="">
+				        <p class="ttNoCuenta">¿Ya tiene una cuenta?<a href="" class="linkRegistro">inisia sesión</a></p>
+				    </p>
+				    <div class="imgRegistroDer" style="text-align: left;">
+						<img src="sesion/11.png" alt="" width="200" height="230">
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
-
-	
-
 	<script src="js/menu.js"></script>
 	<script src="js/jquery.js"></script>
 
