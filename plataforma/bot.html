@@ -6,12 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="css/bot.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
 	
 </head>
 <body class="hidden"  >
 
+	<!-- preloader -->
 	<div class="centrado" id="onload">
 		<img src="herramientas/ade.png">
 		<div class="lds-circle"><div></div></div>
@@ -25,7 +27,7 @@
 				</div>
 				<div class="enlaces" id="enlaces">
 					<a href="index.html"  target="_blank" id="enlace-nosotros" class="btn-header">NOSOTROS</a>
-					<a href="insti.html" target="_blank" id="enlace-usuarios" class="btn-header">INSTITTUCIÓN</a>
+					<a href="insti.html" target="_blank" id="enlace-usuarios" class="btn-header">INSTITUCIÓN</a>
 					<a href="usuarios.html" target="_blank" id="enlace-usuarios" class="btn-header">USUARIOS</a>
 					<a href="herramientas.html" target="_blank" id="enlace-herramientas" class="btn-header">HERRAMIENTAS</a>
 					<a href="contacto.html" target="_blank" id="enlace-contacto" class="btn-header">CONTACTO</a>
@@ -43,11 +45,11 @@
 						
 						<span  class="cta1">
 							<i class="far fa-edit"></i>
-							<h1>Registrarse</h1>
+							<h1 class="tex_icon_menu">Registrarse</h1>
 						</span>
 						<span   class="cta">
 							<i class="fas fa-sign-in-alt"></i>
-							<h1>Inicar Sesión</h1>
+							<h1 class="tex_icon_menu">Inicar Sesión</h1>
 						</span>
 				</div>
 				<div class="icono" id="open">
@@ -122,20 +124,202 @@
 		<div class="modal modal-close">
 			<span class="close"> <i class="fas fa-times"></i></span>
 			
-			<img src="sesion/12.png">
+			<img  src="sesion/ADE.png" class="logoSesion">
+				<!--Contenedor principal-->
+			<div class="contenedor_prinSesion">	
+				<!--Formulario-->
+				<form class="formularioSesion">
+					<p class="tituloIniciar"><strong>Iniciar</strong></p>
+				    <p class="titulo1Sesion">
+				        Inicia sesión para continuar en <br />
+				        <p class="tituloSesion1"><strong>ADE</strong></p>
+				    </p>
+				    <input style="border-left: none;border-top:4px solid #FDAD30; border-right: none;border-bottom: 4px solid #FDAD30;margin-bottom: 20px; margin-left: 14px;width: 70%;
+				    height: 42px;background: #F5F5F5;outline: none; background-image: url(sesion/5.png); background-position: 0px 0px;background-repeat: no-repeat; " class="usuarioo" type="text" placeholder="Usuario" name="">
+				    <input type="password" placeholder="Contraseña" name="">
+				    <p class="wSesion">
+				        
+				        <a href="error404.html" class="boton_sesion">continuar</a>
+				       
+				        <p class="ttNoCuentaS">¿No tienes una cuenta?<a href="#" class="linkRegistro">registrate</a></p>
 
+				    </p>
+				    <div class="imgSesionIzq" style="text-align: left;">
+				    	<img class="" src="sesion/3.png" alt="" width="230">
+				    </div>
+				    <div class="imgSesionDer" style="text-align: left;">
+				    	<img  class="" src="sesion/4.png" alt="" width="100"
+				    	height="180">
+				    </div>
+				</form>
+				<!--Fin formulario-->
+			</div>
+			<!--Fin contenedor principal-->				
 		</div>
 	</div>
 	<!--modal registrarse-->
 	<div class="modal-container1">
+
 		<div class="modal1 modal-close1">
 			<span class="close1"> <i class="fas fa-times"></i></span>
+
+			<section class="contenedorU">
+				<p class="principalU">Elije el tipo de cuenta</p>
+		
+			<div class="contenedor-2U">
+
+				<div class="tipoU">
+
+					<div class="cont-imgU">
+						<img class="imgU" src="sesion/1.png">
+					</div>
+	
+				</div>
+				<div class="tipoU">
+					<div class="cont-imgU">
+						<img class="imgU" src="sesion/7.png">
+					</div>
+					
+				</div>
 			
-			<img src="sesion/10.png">
+				
+				
+				<div class="tipoU">
+					<div class="cont-imgU">
+						<img class="imgU" src="sesion/8.png">
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			<!--nombres -->
+
+			<div class="contenedor-22U">
+
+				<div class="nombreU">
+
+				
+						<h1 class="txt_imagen">DIRECTIVO</h1>
+	
+				</div>
+				<div class="nombre2U">
+				
+						<h1 class="txt_imagen">DOCENTE</h1>
+					
+				</div>
+			
+				
+				<div class="nombre3U">
+				
+						<h1 class="txt_imagen">ESTUDIANTE</h1>
+					
+				</div>
+			</div>
+			<p class="registroU">¿Ya tienes una cuenta?  <a class="linkU" href="#">Iniciar Sesión </a> </p>
+
+		</section>
+
+		
 
 		</div>
 	</div>
 
+	
+	<!-- modal intercambio-->
+	<div class="modal-container_intercambio">
+		<div class="modalI modal-closeI">
+			<span class="closeI"> <i class="fas fa-times"></i></span>
+
+			
+
+			<div class="divImagen">
+				<img src="sesion/9.png" alt="" class="imgRegistroIzq">
+				<img src="sesion/ADE.png" class="logoRegistro">
+				<img src="sesion/10.png" alt="" class="imgRegistroDer">
+			</div>
+			<div class="contenedor_prinRegistro">
+				<form class="formularioRegistro">
+					<div class="txt_regis">
+						<p class="tituloRegistrar"><strong>Registrar</strong></p>
+						<p class="titulo1Registro">
+					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+					    </p>
+
+					</div>				  
+				    	<div class="directivo">
+				    	<select name="" id="">
+				    		<option value="">Tipo Usuario</option>
+				    		<option value="rector">Rector</option>
+				    		<option value="cooAcademico">Coordinador Academico </option>
+				    		<option value="cooConvivenci">Coordinador Convivencia </option>
+				    	</select>
+				    </div>  
+				    <div class="docente">
+				    	<select name="" id="">
+				    		<option value="">Materias</option>
+				    		<option value="">Matematicas</option>
+				    		<option value="">Español</option>
+				    		<option value="">Sociales</option>
+				    		<option value="">Ingles</option>
+				    	</select>
+				    </div>  
+				    <div class="estudiante">
+				    	<select>
+				    		<option value="">Grado</option>
+				    		<option value="">Sexto</option>
+				    		<option value="">Septimo</option>
+				    		<option value="">Octavo</option>
+				    		<option value="">Noveno</option>
+				    		<option value="">Decimo</option>
+				    		<option value="">Once</option>
+				    	</select>
+				    </div>
+				 
+				    <div class="datos">
+				    	<div class="form_d">
+				    		<div class="div_datos">
+				    		<input type="text" placeholder="Usuario" class="entrada" style="background-image: url(sesion/5.png); background-position: 0px 0px;background-repeat: no-repeat;
+				    		 padding-left: 40px ;
+				    		"
+				    		>
+				    		<input type="text" placeholder="Nombre Completo" class="entrada">
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="text" placeholder="Num Identificacion" class="entrada">
+				    		<input type="text" placeholder="Codigo Institucional" class="entrada">
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="password" placeholder="Contraseña" class="entrada"
+				    		style="background-image: url(sesion/6.png); background-position: 0px 0px;background-repeat: no-repeat;
+				    		 padding-left: 40px ;
+				    		">
+				    		<input type="password" placeholder="Verif contraseña" class="entrada"
+				    		style="background-image: url(sesion/6.png); background-position: 0px 0px;background-repeat: no-repeat;
+				    		 padding-left: 40px ;
+				    		">
+				    	</div>
+				    	</div>
+				    	 <div class="imgRegistroDer2">
+						<img src="sesion/11.png" alt="" width="100" height="300">
+						</div>
+				    </div>
+
+				    <div class="wRegistro">
+				       <div class="bt_regis">
+				       	 <a href="error404.html" class="boton_registro">continuar</a>
+				       </div>
+				     	 <p class="ttNoCuenta">¿Ya tiene una cuenta?<a href="" class="linkRegistro2">Inisiar Sesión</a></p>
+				    </div>
+
+
+				</form>
+
+				
+			</div>
+						
+		</div>
+	</div>
 
 	<!--bot -->
 	<main>

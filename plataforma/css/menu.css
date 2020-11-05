@@ -115,36 +115,40 @@ nav .enlaces a{
 	margin-top: 10px;
 }
 .nav-icon{
-	width: 18%;
+	width: 20%;
 	display: flex;
-	margin-right: 25px;
+	margin-right: 30px;
 	justify-content: space-between;
 	color: #000;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	cursor: pointer;
 
 }
 .nav-icon2{
-	width: 18%;
+	width: 20%;
 	display: flex;
-	margin-right: 25px;
+	margin-right: 30px;
 	justify-content: space-between;
-
 	color: #FDAD30;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 
 }
 .nav-icon3{
-	width: 18%;
+	width: 20%;
 	display: flex;
-	margin-right: 25px;
+	margin-right: 30px;
 	justify-content: space-between;
 	color: #069CCC;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 
+}
+.tex_icon_menu{
+	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 }
 
 nav .enlaces a:hover{
@@ -190,7 +194,7 @@ font-size: 50px;
 }
 .modal{
 	background-size: cover;
-	width: 50%;
+	width: 40%;
 	height: 90%;
 	background-image: url("../inicio/fondo.gif");
 	
@@ -215,7 +219,6 @@ font-size: 50px;
 	height:20px;
 	color: #000;
 	border-radius: 50%;
-
 	cursor: pointer;
 }
 .modal-close{
@@ -241,7 +244,7 @@ font-size: 50px;
 	background-size: cover;
 	width: 50%;
 	height: 90%;
-	background-image: url("../inicio/fondo.gif");
+	background:#fff;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -262,6 +265,7 @@ font-size: 50px;
 	width: 20px;
 	height:20px;
 	color: #000;
+	
 	border-radius: 50%;
 
 	cursor: pointer;

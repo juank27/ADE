@@ -50,11 +50,13 @@ window.addEventListener('scroll', function(){
     console.log(window.pageYOffset);/*contador de px en la consola */
     menus();
 });
-
-//modal
+//modal inicio y tipo usuario 
 let cerrar= document.querySelectorAll(".close")[0];
 let cerrar1= document.querySelectorAll(".close1")[0];
 let abrir= document.querySelectorAll(".cta")[0];
+let abrirS= document.querySelectorAll(".linkU")[0];
+let abrirR= document.querySelectorAll(".linkRegistro")[0];
+let abrirR2= document.querySelectorAll(".linkRegistro2")[0];
 let abrir2=document.querySelectorAll(".cta1")[0];
 let abrir3=document.querySelectorAll(".cta2")[0];
 let abrir4=document.querySelectorAll(".cta3")[0]
@@ -62,7 +64,22 @@ let modal= document.querySelectorAll(".modal")[0];
 let modal1= document.querySelectorAll(".modal1")[0];
 let modalC= document.querySelectorAll(".modal-container")[0];
 let modalC1= document.querySelectorAll(".modal-container1")[0];
+//modal de interambio
+//let btn_enviarSesion= document.querySelectorAll(". btn_enviarSesion")[0];
 
+let abrir1I= document.querySelectorAll(".nombreU")[0];
+let abrir2I= document.querySelectorAll(".nombre2U")[0];
+let abrir3I= document.querySelectorAll(".nombre3U")[0];
+let modalI= document.querySelectorAll(".modalI")[0];
+let modalCI= document.querySelectorAll(".modal-container_intercambio")[0];
+let cerrarI= document.querySelectorAll(".closeI")[0];
+let directivo= document.querySelectorAll(".directivo")[0];
+let docente= document.querySelectorAll(".docente")[0];
+let estudiante= document.querySelectorAll(".estudiante")[0];
+
+/*btn_enviarSesion.addEventListener("click",function(e){
+    header('Location:insti.html');
+}*/
 abrir.addEventListener("click",function(e){
     e.preventDefault();
     modalC.style.opacity="1";
@@ -76,13 +93,33 @@ abrir3.addEventListener("click",function(e){
     modal.classList.toggle("modal-close")
 })
 
+abrirS.addEventListener("click",function(e){
+     modal1.classList.toggle("modal-close1");
+    
+    setTimeout(function(){
+
+        modalC1.style.opacity="0";
+        modalC1.style.visibility="hidden";
+
+    },900)
+
+     e.preventDefault();
+    modalC.style.opacity="1";
+    modalC.style.visibility="visible";
+    modal.classList.toggle("modal-close")
+})
+
+
+
 cerrar.addEventListener("click",function(){
     modal.classList.toggle("modal-close");
+ 
     
     setTimeout(function(){
 
         modalC.style.opacity="0";
         modalC.style.visibility="hidden";
+        
 
     },900)
 })
@@ -94,13 +131,53 @@ abrir2.addEventListener("click",function(e){
     modalC1.style.visibility="visible";
     modal1.classList.toggle("modal-close1")
 })
-
 abrir4.addEventListener("click",function(e){
     e.preventDefault();
     modalC1.style.opacity="1";
     modalC1.style.visibility="visible";
     modal1.classList.toggle("modal-close1")
 })
+
+abrirR.addEventListener("click",function(e){
+
+
+    modal.classList.toggle("modal-close");
+ 
+    
+    setTimeout(function(){
+
+        modalC.style.opacity="0";
+        modalC.style.visibility="hidden";
+        
+
+    },900)
+
+    e.preventDefault();
+    modalC1.style.opacity="1";
+    modalC1.style.visibility="visible";
+    modal1.classList.toggle("modal-close1")
+})
+
+abrirR2.addEventListener("click",function(e){
+
+
+     modalI.classList.toggle("modal-closeI");
+    modal1.classList.toggle("modal-close1");
+    setTimeout(function(){
+
+        modalCI.style.opacity="0";
+        modalCI.style.visibility="hidden";
+        modalC1.style.opacity="0";
+        modalC1.style.visibility="hidden";
+
+    },900)
+
+    e.preventDefault();
+    modalC.style.opacity="1";
+    modalC.style.visibility="visible";
+    modal.classList.toggle("modal-close")
+})
+
 
 cerrar1.addEventListener("click",function(){
     modal1.classList.toggle("modal-close1");
@@ -110,8 +187,66 @@ cerrar1.addEventListener("click",function(){
         modalC1.style.opacity="0";
         modalC1.style.visibility="hidden";
 
+
     },900)
 })
+
+//modal de interambio
+
+
+abrir1I.addEventListener("click",function(e){
+
+    e.preventDefault();
+    modalCI.style.opacity="1";
+    modalCI.style.visibility="visible";
+    modalI.classList.toggle("modal-closeI")
+    directivo.style.visibility="visible";
+    estudiante.style.visibility="hidden";
+    docente.style.visibility="hidden";
+
+
+})
+abrir2I.addEventListener("click",function(e){
+
+    e.preventDefault();
+    modalCI.style.opacity="1";
+    modalCI.style.visibility="visible";
+    modalI.classList.toggle("modal-closeI")
+
+    docente.style.visibility="visible";
+    directivo.style.visibility="hidden";
+
+
+})
+abrir3I.addEventListener("click",function(e){
+
+    e.preventDefault();
+    modalCI.style.opacity="1";
+    modalCI.style.visibility="visible";
+    modalI.classList.toggle("modal-closeI")
+
+    estudiante.style.visibility="visible";
+    directivo.style.visibility="hidden";
+
+})
+cerrarI.addEventListener("click",function(){
+    
+modalI.classList.toggle("modal-closeI");
+  
+    setTimeout(function(){
+
+        modalCI.style.opacity="0";
+        modalCI.style.visibility="hidden";
+        directivo.style.visibility="hidden";
+        estudiante.style.visibility="hidden";
+        docente.style.visibility="hidden";
+
+        
+
+    },900)
+})
+
+
 
 
 //buscador
