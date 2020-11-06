@@ -1,0 +1,257 @@
+/**Encabezado**/
+.encabezadoC{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	
+}
+.adeC{
+	width: 300px;
+}
+
+.lineaC{
+	content: '';
+	width: 600px;
+	height: 4px;
+	background: black;
+	margin: auto;
+}
+
+.tituloC{
+	
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+.tituloCP{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+body{
+	font-family:'Open Sans', sans-serif;
+}
+/**Fin encabezado**/
+
+
+/**Contenedor principal**/
+.contenedor_prin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	
+	
+}
+	/**Formulario de inscripción**/
+
+		/**Contenedor naranja**/
+		.contenedor_nar{
+		 	background-color: #FDAD30;
+		 	display: flex;
+		 	width: 520px;
+		 	height: 530px;
+		 	margin-left: 15px;
+		}
+
+		/**Contenedor del formulario**/
+		.contenedor_form{
+			margin-left: -6px;
+			margin-top: -7px;
+			width: 520px;
+		 	height: 530px;
+		 	background-color: #F5F5F5;
+		 	display: inline;
+
+		}
+
+		/**Formulario**/
+		.formulario{
+			background-color: #F5F5F5;
+
+		}
+
+		/**Titulo del formulario**/
+		.titulo1C{
+			padding: 5px;
+			color: #FDAD30;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			
+
+		}
+
+		/**Texto del formulario**/
+		.textoC{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			display: flex;
+			padding: 0;
+			border:0;
+			margin:0 0 15px 0;
+			text-align: center;
+			font-weight: lighter;
+
+		}
+
+		/**Cajas de texto**/
+		
+
+		input[type=text]{
+			font-family: 'Open Sans', sans-serif;
+			border-left: none;
+			border-top: none;
+			border-right: none;
+			border-bottom: 4px solid #FDAD30;
+			margin-bottom: 20px;
+			margin-left: 14px;
+			width: 400px;
+			font-size: 20px;
+			font-weight: 300;
+			background: #F5F5F5;
+			outline: none;
+
+		}
+
+		/**Boton**/
+		input[type=submit]{
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			border-left: none;
+			border-left: 1px solid #FDAD30;
+			border-top: 1px solid #FDAD30;
+			border-bottom: 4px solid #FDAD30;
+			border-right: 4px solid #FDAD30;
+			outline: none;
+			font-weight: 700;
+		    color: #9B9A9A;
+		    cursor: pointer;
+		    padding: 0 7px;
+
+
+		}
+
+		/**Contenedor de boton**/
+		.contenedor_boton_enviar{
+
+			display: flex;
+			margin-left: 410px;
+			margin-top: 0;
+			
+			
+		
+		}
+
+		.sub_caja_1{
+
+			width: 520px;
+		 	height: 530px;
+			padding: 0 0 0 0;
+			border:2px solid #FDAD30;
+			
+		}
+
+	/**Formulario de inscripción**/
+
+	/**Contenedor de imagen**/
+	.contenedor_img{
+		
+		width: 300px;
+		height: 300px;
+		display: flex;
+		
+	}
+	.contenedor_img1{
+		width: 300px;
+		border-radius: 150px;
+		
+	}
+
+	.imagen{
+		
+		width: 300px;
+		height: 300px;
+	}
+
+		/**Contenedor azul**/
+		.contenedor_azul{
+			background-color: #0499D8;
+		 	display: flex;
+		 	width: 520px;
+		 	height: 530px;
+		}
+
+		.sub_caja_2{
+			width: 520px;
+		 	height: 530px;
+			padding: 0 0 0 0;
+			border:2px solid #0499D8;
+			
+		}
+		.titulo2C{
+			color: #0499D8;
+			padding: 5px;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 20px;
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		.contenedor_text_area{
+			
+		text-align: justify;
+		display: flex;
+		
+		}
+
+		.caja_azul{
+			
+			background-color: #0499D8;
+			width: 320px;
+			height: 150px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.contenedor_texto{
+
+			width: 320px;
+			height: 150px;
+			margin-left: -17px;
+			margin-top: -15px;
+			
+		}
+
+		
+		.contenedor_boton{
+
+			display: flex;
+			margin-top: 40px;
+			margin-left: 190px;
+
+
+
+		}
+
+		::placeholder {
+
+		 font-family: 'Open Sans' sans-serif;
+		 font-size: 18px;
+		 font-weight: 300;
+		 color: #9B9A9A;
+
+		}	
+		.label{
+			color: #9B9A9A;
+			padding: 5px 0;
+			margin-left: 10px;
+
+		}	
+
+/**Fin de contenedor**/
+
+
+
+

@@ -1,0 +1,173 @@
+
+/**Encabezado**/
+.encabezado2{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.ade{
+	width: 300px;
+}
+
+.lineas{
+	content: '';
+	margin: auto;
+	width: 600px;
+	height: 4px;
+	background: black;
+}
+
+.titulo_ade{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+
+/*Inicio de parte naranja**/
+
+/**Circulo naranja */
+.caja_principal{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+	
+
+}
+.cir_naranja{
+	width: 300px;
+	height: 300px;
+	background-color: #FDAD30;
+	border-radius:150px; 
+	margin-right: 80px;
+
+}
+
+.cir_img{
+	margin-left: 5px;
+	margin-top:2px;
+	width: 280px;
+	height: 290px;
+	border-radius: 300px;
+	background-color: #F5F5F5;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
+}
+
+.img_1{
+	width: 250px;
+	height: 250px;
+	border-radius: 300px
+}
+
+/**Fin de circulo*/
+
+/**Inicio de cuadro de texto naranja*/
+.cuad_naranja{
+	width: 60px;
+	height: 60px;
+	
+}
+
+.caja_evaluacion{
+	margin-left: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.titulo_evaluacion{
+	margin-bottom: 20px;
+	font-family: 'Open Sans' sans-serif;
+	color: #FDAD30;
+	text-align: left;
+
+}
+
+
+
+.textoh{
+	font-weight: lighter;
+	margin-left: 8px;
+	padding: 10px 10px;
+	
+}
+.caja_naranja{
+
+	width: 500px;
+	height: 120px;
+	display: flex;
+	background-color: #FDAD30; 
+}
+
+.caja_sombra{
+	margin-left: -5px;
+	margin-top: -5px;
+	width: 500px;
+	height: 120px;
+	background-color: #F5F5F5; 
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
+}
+.p1{
+	font-size: 18px;
+	font-weight: 300;
+	text-align: justify;
+}
+/**Fin de cuadro de texto naranja*/
+
+/**Inicio de parte azul*/
+/**Cuadro de texto azul*/
+.simulacro{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+
+}
+
+.cuad_azul{
+	width: 500px;
+	height: 120px;
+	display: flex;
+	background-color: #0499D8; 
+	margin-right: 115px;
+}
+.caja_simulacro{
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.titulo_simulacro{
+	margin-bottom: 20px;
+	margin-right: 110px;
+	color: #0499D8;
+	text-align: right;
+}
+
+.t{
+	font-size: 18px;
+	font-weight: 300;
+	text-align: justify;
+}
+.t1{
+
+	font-size: 25px;
+
+}
+
+/**Circulo azul*/
+.cir_azul{
+	width: 300px;
+	height: 300px;
+	background-color: #0499D8;
+	border-radius:150px; 
+	margin-right: 80px;
+}
+
+.img_2{
+	width: 250px;
+	height: 250px;
+	border-radius: 300px
+}

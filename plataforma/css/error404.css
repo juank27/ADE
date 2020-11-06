@@ -1,0 +1,49 @@
+
+.error{
+
+	width: 97,5%;
+	
+	background-color: #009BCE; 
+	display: flex;
+	justify-content: center;
+	padding: 20px 20px;
+
+}
+.errorText{
+
+	font-family: 'Open Sans', sans-serif;
+    font-size: 105px;	
+    color: #FDAD30;
+  
+    
+  }
+.errorText2{
+	font-family: 'Open Sans', sans-serif;
+    font-size: 30px;	
+    color: #FDAD30;
+    margin-top: -100px;
+}
+.primero{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;	
+}
+.intP{
+	text-align: center;
+}
+
+.estrella{
+	margin-top: 120px;
+	width: 260px;}
+	
+.luna{
+	margin-top: 100px;
+	width: 260px;
+	
+}
+.fondo{
+	margin-top: -10px;
+	width: 800px;
+	height: 400px;
+   
+}

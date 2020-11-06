@@ -1,0 +1,156 @@
+/**Encabezado**/
+.encabezado2{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 150px;
+	
+}
+.ade{
+	width: 300px;
+}
+
+.lineas{
+	content: '';
+	width: 600px;
+	height: 4px;
+	background: black;
+	margin: auto;
+}
+
+.tituloU{
+	
+	margin-bottom: 80px;
+
+}
+.tituloP{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	margin-top: 10px;
+}
+/**Fin encabezado**/
+
+
+/**Sirve para naranja y azul**/
+.contenedor2{
+	justify-content: center;
+	display: flex;
+	margin-bottom: 100px;
+}
+
+.cuad_sombra{
+	width: 600px;
+	height: 150px;
+	background-color: #F5F5F5;
+	margin-left: -5px;
+	margin-top: -5px;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
+}
+.caja_txt_1{
+	margin-left: 4px;
+	padding: 10px 10px;
+	
+}
+.txt_1_U{
+	font-weight: 300;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.cir_sombra{
+		width: 280px;
+		height: 280px;
+		border-radius: 145px;
+		background-color: #F5F5F5;
+		margin-left: 4px;
+		margin-top: 4px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		box-shadow: 0 0 10px rgb(0,0,0,.4);
+	}
+
+
+/**Contenedor azul**/
+	/**Circulo azul**/
+
+	.cir_azul{
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background-color: #0499D8; 
+
+	}
+
+	.img{
+		width: 230px;
+		height: 215px;
+		
+	}
+	/**Fin circulo azul**/
+
+	/**Cuadro de texto azul**/
+	.caja_titu_cuad{
+		margin-left: 80px;
+		margin-right: 80px;
+		height: 30px;
+
+	}
+
+	.titulo_azul{
+		background-color:none;
+		font-family: 'Sans Serif', sans-serif;
+		color:#0499D8;
+		margin-bottom: 10px;
+	}
+	.titulo_azul_U{
+		font-size: 30px;
+	
+	}
+
+	.cuad_azul{
+		background-color: #0499D8;
+		width: 600px;
+		height: 150px;
+		display: flex;
+		font-family: 'Open sans', sans-serif;
+	}
+	/**Fin cuadro de texto azul**/
+
+/**Fin contenedor azul**/
+
+/**---------------------------------------------------**/
+
+/**Contenedor naranja**/
+	/**Cuadro de texto naranja**/
+	
+	.titulo_naranja{
+		background-color:none;
+		font-family: 'Sans Serif', sans-serif;
+		color:#FDAD30;
+		text-align: right;
+		margin-bottom: 10px;
+	}
+	.titulo_naranja_U{
+		font-size: 30px;
+	}
+	.cuad_naranja{
+		background-color: #FDAD30;
+		width: 600px;
+		height: 150px;
+		display: flex;
+		font-family: 'Open sans', sans-serif;
+	}
+	/**Fin cuadro de texto**/
+
+	/**Circulo naranja**/
+	.cir_naranja{
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		background-color: #FDAD30;
+	}
+	/**Fin circulo naranja**/
+
+
