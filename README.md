@@ -1,2 +1,0 @@
-# ADE
-Aprendizaje Dinámico Educativo
