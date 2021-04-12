@@ -1,0 +1,25 @@
+
+	{% extends 'menu.html' %}
+	{% block title %} Bot{% endblock %}
+	{% block content %}
+
+	<!--bot -->
+	<main>
+			<section class="cont-Bot">
+			<div>
+				<div class="BOT">
+
+					<div ><img class="adeB" src="{{ url_for('static', filename='herramientas/ade.png') }}"></div>
+					<p class="lineasB"></p>{{ url_for('static', filename='sesion/bombillo.png') }}
+					<div >
+					<p class="tituloB">Bot Coversacional </p></div>
+				</div>
+				<img src="{{ url_for('static', filename='bot/1.png') }}">
+			</div>
+
+			<iframe src="https://webchat.snatchbot.me/19bf2782fcdd666eef5e65180f5131d961d7a5c0722af3e57879a1264cb6461b"></iframe>
+			</section>
+	</main>
+	{% endblock %}
+
+
