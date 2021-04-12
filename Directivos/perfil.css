@@ -1,0 +1,186 @@
+body{
+    background-color:#0499D8;
+    text-align: center;
+    border-radius: 100px;
+    height: 98vh;
+    display: flex;
+
+}
+
+.contenedor_1{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.contenedor_2{
+  
+    background-color: #092838;
+    background-size: cover;
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+    
+  
+}
+
+.encabezado{
+
+    width: 100%;
+    height: 212px;
+    display: inline-flex;
+}
+
+.contenedorImgPrincipal{
+    display: block;
+    width: 212px;
+    height: 212px;
+    margin-top: 25px;
+    margin-left: 25px;
+
+
+  
+}
+.imgPrincial{
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 240px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: white;
+
+}
+
+.contenedorTitulo{
+
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+
+  display: inline-flex;
+}
+
+.contenedorBombillo{
+    
+    height: 45px;
+    width: 45px;
+    margin-top: 40px;
+
+}
+
+.bombillo{
+    
+    font-size: 45px;
+    color: white;
+}
+
+.contenedorTituloB{
+ 
+    width: 300px;
+    height: 100px;
+    
+}
+
+.titulo{
+    margin-bottom: 0;
+    font-size: 40px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700px;
+    
+    
+ 
+}
+
+.contenedorMenu{
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 75px;
+}
+
+.menu{
+    font-size: 70px;
+    color: white;
+    
+}
+
+.contenedorAvatar img{
+    display:inline-flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 250px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.contenedorPiePagina{
+   
+
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+}
+
+.contenedorGifNube{
+    width: 120px;
+    height: 100px;
+ 
+}
+
+.gifNube{
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+}
+
+.contenedorBoton{
+    width: 100px; 
+   height: 20px;
+   margin-top: 20px;
+   margin-left: 150px;
+}
+
+.boton{
+    width: 230px; 
+    height: 50px;
+    border-radius: 12px;
+    background-color: #56AEFF;
+    color: white;
+    border: 0px;
+    font-size: 25px;
+}
+
+
+
+.contenedorGifSol{
+    width: 120px;
+    height: 120px;
+    margin-left: 37%;
+    margin-top: -17px;
+   
+}
+
+.gifSol{
+    width: 120px;
+    height: 120px;
+}
+
+
+
