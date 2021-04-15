@@ -1,0 +1,239 @@
+{% extends 'principal/menu.html' %}
+{% block title %} Inicio{% endblock %}
+{% block preloader %}
+<!-- preloader -->
+	<div class="preloader" id="onload">
+		<img src="{{ url_for('static', filename='principal/img/ade.png') }}">
+		<div class="lds-circle"><div></div></div>
+	</div>
+{% endblock %}
+{% block content %}
+	
+	
+
+	<!--encabezado-->
+	<main>
+		<section >
+			<div class="encabezado">
+			
+				<div class="linea1">
+				<img class="logo1" src="{{ url_for('static', filename='principal/img/7.png') }}">
+				<div class="titulos">
+					<img class="ade" src="{{ url_for('static', filename='principal/img/ade.png') }}">
+					<h1 class="title">Aprendizaje Dinámico Educativo</h1>
+				</div>
+				<img class="logo1" src="{{ url_for('static', filename='principal/img/8.png') }}">
+				</div>
+				<div class="linea2">
+					<img class="logo2" src="{{ url_for('static', filename='principal/img/9.png') }}">
+					
+					<div class="boton">
+							<button class="i abrir-Sesion2">Iniciar Sesión </button>
+						</div>
+
+					<div class="boton">
+							<button class="r cta3">Registrarse</button>
+						</div>
+					<img class="logo2" src="{{ url_for('static', filename='principal/img/10.png') }}">
+				</div>
+
+			
+			</div>
+		</section>
+		
+		<!--benficios -->
+		<section class="contenedor">
+			<p class="principal">ADE le brinda grandes beneficios a las Intituciones Educativas</p>
+			<div class="contenedor-2">
+
+				<div class="beneficios">
+
+					<div class="imagen2">
+						<img class="img2" src="{{ url_for('static', filename='principal/img/11.png') }}">
+					</div>
+					<div class="texto1">
+						<br><h1 class="azul">Amplia tus<br> herramientas de apoyo</h1><br>
+						<p class="text">Llevar un control mas frecuente del desempeño de los estudiantes, le permitirá a la Institución un crecimiento academico y formativo.</p>
+					</div>
+					
+				</div>
+				<div class="beneficios">
+					<div class="imagen1">
+						<img class="img1" src="{{ url_for('static', filename='principal/img/10.png') }}">
+					</div>
+					<div class="texto">
+
+						<br><h1 class="amarillo">Desarrolla <br>aprendizaje interactivo </h1><br>
+						<p class="text">Descubre nuevas formas de evaluar a tus estudiantes ,mientras aprenden de manera visual y dinámica .</p>
+					</div>
+					
+				</div>
+				<div class="beneficios">
+					<div class="imagen1">
+						<img class="img1" src="{{ url_for('static', filename='principal/img/12.png') }}">
+					</div>
+					<div class="texto">
+
+						<br><h1 class="azul">Diviértete <br>estudiando </h1><br>
+						<p class="text">Practica para evaluaciones y refuerza tu conocimiento mientras te diviertes.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<p class="incrips">¿Quieres inscribir tu Institución? <a class="link" target="_blank" href="contacto.html">Formulario de Incripción</a> </p>
+
+			
+		</section>
+		<!--Herramientas -->
+		<section class="contenedor">
+		
+		
+			<div class="contenedor-2">
+
+				<div class="herramienta">
+
+					<div class="imagen">
+						<img class="img" src="{{ url_for('static', filename='principal/img/13.png') }}">
+					</div>
+	
+				</div>
+				<div class="herramienta2">
+					<div class="imagen">
+						<img class="img" src="{{ url_for('static', filename='principal/img/14.png') }}">
+					</div>
+					
+				</div>
+			
+				<div class="herramienta1">
+					<div class="imagen">
+						<a href="herramientas.html" target="_blank">
+							<img class="img" src="{{ url_for('static', filename='principal/img/17.png') }}">
+						</a>
+					</div>
+					
+				</div>
+				
+				<div class="herramienta">
+					<div class="imagen">
+						<img class="img" src="{{ url_for('static', filename='principal/img/16.png') }}">
+					</div>
+					
+					
+				</div>
+				<div class="herramienta2">
+					<div class="imagen">
+						<img class="img" src="{{ url_for('static', filename='principal/img/15.png') }}">
+					</div>
+					
+				</div>
+				
+			</div>
+			<!--nombres -->
+
+			<div class="contenedor-22">
+
+				<div class="nombre">
+
+					<div >
+						<h1 class="imagen">EVALUACIONES</h1>
+					</div>
+	
+				</div>
+				<div class="nombre2">
+					<div>
+						<h1 class="imagen">ESTADISTICA</h1>
+					</div>
+					
+				</div>
+			
+				<div class="herramienta1">
+					<div class="imagen">
+						<p class="principal"> Herramientas</p>
+					</div>
+					
+				</div>
+				
+				<div class="nombre">
+					<div >
+						<h1 class="imagen">ENTRENAMIENTO</h1>
+					</div>
+					
+					
+				</div>
+				<div class="nombre2">
+					<div >
+						<h1 class="imagen">SIMULACRO</h1>
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</section>
+		<!--usuarios -->
+		<section class="contenedor">
+			<br><p class="principal">Usuarios </p>
+			
+			<div class="contenedor-3">
+
+				<div class="usuarios">
+
+					<div class="">
+						<img class="imu" src="{{ url_for('static', filename='principal/img/18.png') }}">
+					</div>
+					<div >
+						<br><p class="textou" >Institución</p>
+					</div>
+					
+				</div>
+				<div class="usuarios">
+					<div class="">
+						<img class="imu" src="{{ url_for('static', filename='principal/img/19.png') }}">
+					</div>
+					<div >
+						<br><p class="textou" >Directivos</p>
+					</div>
+					
+				</div>
+
+				<div class="usuarios">
+					<div class="">
+						<img class="imu" src="{{ url_for('static', filename='principal/img/20.png') }}">
+					</div>
+					<div >
+
+						<br><p class="textou">Docentes</p>
+					</div>
+					
+				</div>
+				<div class="usuarios">
+					<div class="">
+						<img class="imu" class="" src="{{ url_for('static', filename='principal/img/21.png') }}">
+					</div>
+					<div >
+
+						<br><p class="textou" >Estudiantes </p>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			
+		</section>
+		
+	</main>
+	<br><br><p class="equipoT"> EQUIPO DE DESAROLLO </p>
+	<div class="equipo">
+		
+		<img src="{{ url_for('static', filename='principal/img/22.png') }}">
+	</div>
+	
+
+	
+
+	
+{% endblock %}
+

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/inicio.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/menu.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/sesion.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/registro.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/usuario.css') }}">
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/bot.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/estilo_contacto.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/estilo_herramienta.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/estilo_usuario.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/footer.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/insti.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/soporte.css') }}">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+	<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(136817)</script>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='principal/img/bombillo.png') }}" sizes="32x32">
+</head>
+<body class="hidden"  >
+	
+	{% block preloader %}
+	{% endblock %}
+	<!--********************** fin preloader ***************** -->
+
+	<!--********************** menú  de navegación***************** -->
+	<header>
+		<nav id="nav" class="Contenedor-Menú"><!--Contenedor principal del menú-->
+			<div class="Segundo-Contenedor"><!--Contenedor secundario del menú-->
+				<div class="Logo-Pagina"><!--Contenedor del icono de la pagina-->
+					<img src="{{ url_for('static', filename='principal/img/logo.png') }}">
+				</div>
+				<div class="Contenedor-Enlaces__Menú" id="Enlaces"><!--Contendor Enlaces de navegación del menú-->
+					<a href="nosotros"    class="btn-header">NOSOTROS</a>
+					<a href="insti"   class="btn-header">INSTITUCIÓN</a>
+					<a href="usuarios"   class="btn-header">USUARIOS</a>
+					<a href="herramientas"   class="btn-header">HERRAMIENTAS</a>
+					<a href="contacto"  class="btn-header">CONTACTO</a>
+					<a href="soporte"  id="enlace-soporte" class="btn-header">SOPORTE</a>	
+					
+				</div>
+				
+				<!--Contenedor iconos de navegación -->
+				<div class="Contenedor-iconos__menú" id="nav-icon" >
+						<!--Icono de buscador-->
+						<span class="Icono-buscador" id="ctn-icon-search">
+							<i id="ctn-icon-search" class="fas fa-search"></i>
+							
+						</span>
+						<!--Icono de registro-->
+						<span  class="abrir-Usuario">
+							<i class="far fa-edit"></i>
+							<h1 class="texto-iconos__menú">Registrarse</h1>
+						</span>
+						<!--Icono de Inicio de Sesión-->
+						<span   class="abrir-Sesion">
+							<i class="fas fa-sign-in-alt"></i>
+							<h1 class="texto-iconos__menú">Inicar Sesión</h1>
+						</span>
+				</div>
+				
+			</div>
+		</nav>
+	</header>
+	<!--**********************  fin menú  de navegación***************** -->
+
+	<!--*************contenedor barra de busqueda **********************-->
+
+	<div  id="ctn-bars-search">
+		<input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+		
+		<div id="x-buscador">
+			<i class="fas fa-times"></i>
+		</div>
+
+	</div>
+	<ul id="box-search">
+		<li>
+			<a href="index.html" target="_blank"><i  class="fas fa-search"></i>
+			Nosotros
+			</a>
+		</li>
+		<li>
+			<a href="herramientas.html" target="_blank"><i  class="fas fa-search"></i>
+			Herramientas
+			</a>
+		</li>
+		<li>
+			<a href="usuarios.html" target="_blank"><i  class="fas fa-search"></i>
+			Usuarios
+			</a>
+		</li>
+		<li>
+			<a href="soporte.html" target="_blank"><i  class="fas fa-search"></i>
+			Soporte
+			</a>
+		</li>
+		<li>
+			<a href="contacto.html" target="_blank"><i  class="fas fa-search"></i>
+			Contacto
+			</a>
+		</li>
+		<li>
+			<a href="bot.html" target="_blank"><i  class="fas fa-search"></i>
+			Chat Bot
+			</a>
+		</li>
+		<li>
+			<a href="insti.html" target="_blank"><i  class="fas fa-search"></i>
+			Institución Pionera 
+			</a>
+		</li>
+		<li>
+			<a href="bot.html" target="_blank"><i  class="fas fa-search"></i>
+			Iniciar Sesion 
+			</a>
+		</li>
+		<li>
+			<a href="bot.html" target="_blank"><i  class="fas fa-search"></i>
+			Registro
+			</a>
+		</li>
+	</ul>
+
+	<div id="cover-ctn-search"></div>
+	<!--*************Fin contenedor barra de busqueda **********************-->
+
+
+
+	<!-- ----------------modal inicio de sesion---------------------------- -->
+	<!--De aqui en adelante los estilos se encuentran el css sesion-->
+	<div class="modal-container_Sesión"><!--Contenedor de transparencia negra-->
+		<div class="modal-container_SesiónDos modal-container_cerrarS"><!--Contenedor  central blanco-->
+			<span class="cerrar-Sesion"> <i class="fas fa-times"></i></span><!--icono de la x-->
+			
+			<img  src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoSesion"><!--Logo ADE-->
+				<!--Contenedor principal-->
+			<div class="contenedor-principal__Sesion">	
+				<!--Formulario-->
+				<form class="formularioSesion">
+					<!--Titulo principal-->
+					<p class="tituloSesion"><strong>Iniciar</strong></p>
+					<!--Subtitulos-->
+				    <p class="SubtituloSesion">
+				        Inicia sesión para continuar en <br />
+				        <p class="SubtituloDos-Sesion"><strong>ADE</strong></p>
+				    </p>
+				    <!--datos de ingresar-->
+				    <input class="Ingresar-Usuario" type="text" placeholder="Correo Electronico" name="">
+				    <input type="password" placeholder="Contraseña" name="">
+
+				    <!--Bonton continuar-->
+				        
+				    <div class="caja-boton" ><a class="boton_sesion" href="error404.html" >continuar</a></div>
+
+				    <!--texto opcion de registro-->
+				  	<p class="Pregunta-Registro">¿No tienes una cuenta?<a href="#" class="linkRegistro">registrate</a></p>
+
+				    <!--imagenes del formulario -->
+				    <div class="imgSesionIzq" style="text-align: left;">
+				    	<img class="" src="{{ url_for('static', filename='principal/img/26.png') }}" alt="" width="230">
+				    </div>
+				    <div class="imgSesionDer" style="text-align: left;">
+				    	<img  class="" src="{{ url_for('static', filename='principal/img/27.png') }}" alt="" width="100"
+				    	height="180">
+				    </div>
+				</form>
+				<!--Fin formulario-->
+			</div>
+			<!--Fin contenedor principal-->				
+		</div>
+	</div>
+	<!--Fin modal inicio de sesión -->
+    
+
+
+
+	<!--************************modal elegir usuarios  ***************************-->
+	<!-- de aqui en aldente se encuentra en el css usuario-->
+	<div class="modal-container_Usuarios"><!--Contenedor de transparencia negra-->
+
+		<div class=" modal-container_UsuariosDos modal-container_cerrarU"><!--Contenedor  central blanco-->
+			<span class="cerrar-Usuario"> <i class="fas fa-times"></i></span><!--icono de la x-->
+
+			<section class="contenedor-Tipos_Usuario"><!--Seccion que contine todas las opciones de usuario -->
+				<p class="titulo-Cuenta_Usuario">Elije el tipo de cuenta</p>
+		
+			<div class="contenedor-Imagenes_TU"><!--Contenerdor total  de imagenes -->
+
+				<div class="tipo-UsuarioI"><!--contendor gris de cada imagen-->
+
+					<div class="cont-imgBlanco"><!--contendor blanco de cada imagen-->
+						<img class="imagen-usuario" src="{{ url_for('static', filename='principal/img/28.png') }}"><!--imagen-->
+					</div>
+	
+				</div>
+				<div class="tipo-UsuarioI"><!--contendor gris de cada imagen-->
+
+					<div class="cont-imgBlanco"><!--contendor blanco de cada imagen-->
+						<img class="imagen-usuario" src="{{ url_for('static', filename='principal/img/29.png') }}"><!--imagen-->
+					</div>
+					
+				</div>
+			
+				
+				
+				<div class="tipo-UsuarioI"><!--contendor gris de cada imagen-->
+
+					<div class="cont-imgBlanco"><!--contendor blanco de cada imagen-->
+						<img class="imagen-usuario" src="{{ url_for('static', filename='principal/img/30.png') }}"><!--imagen-->
+					</div>
+					
+					
+				</div>
+				
+			</div><!--Fin contenedor total de imagenes -->
+
+			<!--conedor de los nombres de cada imagen  -->
+
+			<div class="contenedor-Texto_TU">
+
+				<div class="Contenedor-NombreAmarillo intercambioUno"> <!--Cajas de nombre color amarillo-->
+
+				
+						<h1 class="txt_nombres-TU">DIRECTIVO</h1><!--Nombre tipo de usuario-->
+	
+				</div>
+				<div class="Contenedor-NombreAzul intercambioDos"> <!--Cajas de nombre color azul -->
+				
+						<h1 class="txt_nombres-TU">DOCENTE</h1>
+					
+				</div>
+			
+				
+				<div class="Contenedor-NombreAmarillo intercambioTres"> <!--Cajas de nombre color amarillo-->
+				
+						<h1 class="txt_nombres-TU">ESTUDIANTE</h1><!--Nombre tipo de usuario-->
+					
+				</div>
+			</div>
+			<p class="Pregunta-Sesion">¿Ya tienes una cuenta?  <a class="linkSesion" href="#">Iniciar Sesión </a> </p>
+
+		</section>
+
+		
+
+		</div>
+	</div>
+	<!--Fin modal de tipo de usuario -->
+
+
+	<!--********************+Modales de intercambio para egistrar cada tipo de usuario*****************-->
+	<!--De aqui en adelante los estilos se encuentran el css registro-->
+
+	<!--Directivo Docentes-->
+	<div class="modal-container_intercambioDirectivos"><!--Contenedor de transparencia negra-->
+		<div class="modal-container_intercambioDosDirectivos modal-container_cerrarID"><!--Contenedor  central blanco-->
+			<span class="cerrar-IntercambioDirectivos"> <i class="fas fa-times"></i></span><!--icono de la x-->
+
+		
+			<div class="CImagen_modalRegistro"><!--Contenedor de imagenes del modal -->
+				<!--Imagenes -->
+				<img src="{{ url_for('static', filename='principal/img/31.png') }}" alt="" class="imgRegistroIzq">
+				<img src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoRegistro">
+				<img src="{{ url_for('static', filename='principal/img/32.png') }}" alt="" class="imgRegistroDer">
+			</div>
+			<!--Contenedor principal del formulario -->
+			<div class="contenedor_prinRegistro">
+
+				<!--Formulario de registro -->
+				<form class="formularioRegistro">
+
+					<!--Contendor de los titulos del formulario  -->
+					<div class="txt_registro " >
+						<p class="tituloRegistrar"><strong>Registrar</strong></p>
+						<p class="subtituloRegistrar">
+					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+					    </p>
+					  </div>
+					<!--Selectores de intercambio-------------------------------------->
+					<!--directivos-->
+									  
+				    	<div class="directivo ">
+				    	<select name="" id="">
+				    		<option value="">Tipo Usuario</option>
+				    		<option value="rector">Rector</option>
+				    		<option value="cooAcademico">Coordinador Academico </option>
+				    		<option value="cooConvivenci">Coordinador Convivencia </option>
+				    	</select>
+				    </div>  
+				    <!--------------->
+
+				 	 <!----Datos de cada formulario---->
+				    <div class="datos">
+				    	<div class="form_d"><!--Contenedor de datos -->
+				    		<div class="div_datos"><!--Division de cada uno de los datos-->
+				    		<input type="text" placeholder="Correo Electronico"  >
+				    		<input type="text" placeholder="Nombre Completo" >
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="text" placeholder="Num Identificacion" >
+				    		<input type="text" placeholder="Codigo Institucional" >
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="password" placeholder="Contraseña" class="entradaDos">
+				    		<input type="password" placeholder="Verif contraseña" class="entrada">
+				    	</div>
+				    	</div>
+				    	<!--Imagen ubicada al lado derecho del formulario --->
+				    	 <div class="imgRegistroDer2">
+						<img src="{{ url_for('static', filename='principal/img/33.png') }}" alt="" width="100" height="300">
+						</div>
+				    </div>
+				    <!--Pate final del formulario de registro-->
+				    <div class="Final_Registro">
+				       <div class="bt_regis"><!--division boton continuar-->
+				       	 <a href="error404.html" class="boton_registro">continuar</a><!--Boton-->
+				       </div>
+				         <!--Pregunta si ya tiene cuenta-->
+				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionD">Inisiar Sesión</a></p>
+				    </div>
+
+
+				</form>
+
+				
+			</div>
+						
+		</div>
+	</div>
+
+
+<!-- Etudiantes-->
+	<div class="modal-container_intercambioEstudiantes"><!--Contenedor de transparencia negra-->
+		<div class="modal-container_intercambioDosEstudiantes modal-container_cerrarIE"><!--Contenedor  central blanco-->
+			<span class="cerrar-IntercambioEstudiantes"> <i class="fas fa-times"></i></span><!--icono de la x-->
+
+		
+			<div class="CImagen_modalRegistro"><!--Contenedor de imagenes del modal -->
+				<!--Imagenes -->
+				<img src="{{ url_for('static', filename='principal/img/31.png') }}" alt="" class="imgRegistroIzq">
+				<img src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoRegistro">
+				<img src="{{ url_for('static', filename='principal/img/32.png') }}" alt="" class="imgRegistroDer">
+			</div>
+			<!--Contenedor principal del formulario -->
+			<div class="contenedor_prinRegistro">
+
+				<!--Formulario de registro -->
+				<form class="formularioRegistro">
+
+					<!--Contendor de los titulos del formulario  -->
+					<div class="txt_registro " >
+						<p class="tituloRegistrar"><strong>Registrar</strong></p>
+						<p class="subtituloRegistrar">
+					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+					    </p>
+					
+					</div>		
+					
+
+				 	 <!----Datos de cada formulario---->
+				    <div class="datos">
+				    	<div class="form_d"><!--Contenedor de datos -->
+				    		<div class="div_datos"><!--Division de cada uno de los datos-->
+				    		<input type="text" placeholder="Correo Electronico"  >
+				    		<input type="text" placeholder="Nombre Completo" >
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="text" placeholder="Num Identificacion" >
+				    		<input type="text" placeholder="Codigo Institucional" >
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="password" placeholder="Contraseña" class="entradaDos">
+				    		<input type="password" placeholder="Verif contraseña" class="entrada">
+				    	</div>
+				    	</div>
+				    	<!--Imagen ubicada al lado derecho del formulario --->
+				    	 <div class="imgRegistroDer2">
+						<img src="{{ url_for('static', filename='principal/img/33.png') }}" alt="" width="100" height="300">
+						</div>
+				    </div>
+				    <!--Pate final del formulario de registro-->
+				    <div class="Final_Registro">
+				       <div class="bt_regis"><!--division boton continuar-->
+				       	 <a href="error404.html" class="boton_registro">continuar</a><!--Boton-->
+				       </div>
+				         <!--Pregunta si ya tiene cuenta-->
+				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionE">Inisiar Sesión</a></p>
+				    </div>
+
+
+				</form>
+
+				
+			</div>
+						
+		</div>
+	</div>
+
+<!-- Docentes-->
+	<div class="modal-container_intercambioDocentes"><!--Contenedor de transparencia negra-->
+		<div class="modal-container_intercambioDosDocentes modal-container_cerrarIDD"><!--Contenedor  central blanco-->
+			<span class="cerrar-IntercambioDocentes"> <i class="fas fa-times"></i></span><!--icono de la x-->
+
+		
+			<div class="CImagen_modalRegistro"><!--Contenedor de imagenes del modal -->
+				<!--Imagenes -->
+				<img src="{{ url_for('static', filename='principal/img/31.png') }}" alt="" class="imgRegistroIzq">
+				<img src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoRegistro">
+				<img src="{{ url_for('static', filename='principal/img/32.png') }}" alt="" class="imgRegistroDer">
+			</div>
+			<!--Contenedor principal del formulario -->
+			<div class="contenedor_prinRegistro">
+
+				<!--Formulario de registro -->
+				<form class="formularioRegistro">
+
+					<!--Contendor de los titulos del formulario  -->
+					<div class="txt_registro " >
+						<p class="tituloRegistrar"><strong>Registrar</strong></p>
+						<p class="subtituloRegistrar">
+					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+					    </p>
+					
+					</div>		
+					<!--Selectores de intercambio-------------------------------------->
+					
+
+				 	 <!----Datos de cada formulario---->
+				    <div class="datos">
+				    	<div class="form_d"><!--Contenedor de datos -->
+				    		<div class="div_datos"><!--Division de cada uno de los datos-->
+				    		<input type="text" placeholder="Correo Electronico"  >
+				    		<input type="text" placeholder="Nombre Completo" >
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="text" placeholder="Num Identificacion" >
+				    		<input type="text" placeholder="Codigo Institucional">
+				    	</div>
+				    	<div class="div_datos">
+				    		<input type="password" placeholder="Contraseña" class="entradaDos">
+				    		<input type="password" placeholder="Verif contraseña" class="entrada">
+				    	</div>
+				    	</div>
+				    	<!--Imagen ubicada al lado derecho del formulario --->
+				    	 <div class="imgRegistroDer2">
+						<img src="{{ url_for('static', filename='principal/img/33.png') }}" alt="" width="100" height="300">
+						</div>
+				    </div>
+				    <!--Pate final del formulario de registro-->
+				    <div class="Final_Registro">
+				       <div class="bt_regis"><!--division boton continuar-->
+				       	 <a href="error404.html" class="boton_registro">continuar</a><!--Boton-->
+				       </div>
+				         <!--Pregunta si ya tiene cuenta-->
+				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionDD">Inisiar Sesión</a></p>
+				    </div>
+
+
+				</form>
+
+				
+			</div>
+						
+		</div>
+	</div>
+
+	{% block content %}
+	{% endblock %}
+
+		<!-- footer-->
+	<footer>
+		<!--Contenedor principal de todo el foteer,caja azul-->
+		<div class="contenedor_prinFooter">
+			<div class="contenedor_DosFooter">
+				<img class="final" src="{{ url_for('static', filename='principal/img/48.png') }}">
+			<div>
+				<h1 class="tFinal">SERVICIOS</h1><br>
+				<ul class="flis">
+					<li>Usuarios</li>
+					<li>Herramientas</li>
+					<li>Estadísticas</li>
+				</ul>
+			</div>
+			<div>
+				<h1 class="tFinal">COMUNICARSE</h1><br>
+				<ul class="flis">
+					<li>Póngase  en contacto</li>
+					<li>Comentarios</li>
+					<li>Redes sociales</li>
+				</ul class="flis">
+			</div>
+			<div>
+				<h1 class="tFinal">POLITICAS</h1><br>
+				<ul class="flis">
+					<li>Privacidad</li>
+					<li>Agradecimientos</li>
+					<li>Licencias</li>
+				</ul>
+			</div>
+			<!--Footer amarillo-->
+			<div class="footer_amarilo">
+				<div class="cont-textF">
+				<h1 class="tFinal">ACERCA DE </h1><br>
+				<p class="pFinal">ADE  es  un aplicativo web enfocado a gestionar el área académica, utilizando actividades dinámicas, para el aprendizaje de los estudiantes, y así generar estadisticas.</p>
+				<div class="redes">
+		
+					<i class="fab fa-whatsapp"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+				</div>
+				</div>
+				
+				<div class="imaF">
+				<img class="final2" src="{{ url_for('static', filename='principal/img/49.png') }}">
+				</div>
+				
+				
+			
+				
+				</div>
+			</div>
+			<p class="linea"></p>
+		</div>
+
+
+
+	</footer>
+	<script src="{{ url_for('static', filename='principal/js/menu.js') }}"></script>
+	<script src="{{ url_for('static', filename='principal/js/jquery.js') }}"></script>
+	
+
+
+
+</body>
+</html>

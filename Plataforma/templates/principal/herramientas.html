@@ -1,0 +1,140 @@
+{% extends 'principal/menu.html' %}
+{% block title %} Herramientas{% endblock %}
+{% block content %}
+
+	<main>
+		<!--Encabezado--->
+		<div class="encabezado2">
+			<div >
+				<img class="ade" src="{{ url_for('static', filename='principal/img/ade.png') }}">
+			</div>
+			<p class="lineas"></p>
+			
+			<div>
+				<p class="titulo_ade"><strong>ADE</strong> te brinda las mejores herramientas para aprender y evaluar <br> de manera dinámica</p>
+			</div>
+		</div>
+		<!--Fin de encabezado--->
+
+		<!--Inicio herramienta evaluación naranja--->
+		<div class="caja_principal">
+			<!--circulo con imagen--->
+			<div class="cir_naranja">
+				<div class="cir_img">
+					<img src="{{ url_for('static', filename='principal/img/3.png') }}" class="img_1">
+				</div>
+			</div>
+
+			<!--Modulo de texto--->
+			<div class="caja_evaluacion">
+				<div class="titulo_evaluacion">
+					<h1 class="t1">Evaluación</h1>
+				</div>
+				<div class="caja_naranja">
+					<div class="caja_sombra">
+						<div class="textoh">
+							<p class="p1">Realiza evaluaciones de cada tema visto para calificar el rendimineto de tus estudiantes.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--Fin herramienta evaluación--->
+
+		
+		<!--Inicio herramienta simulacro azul--->
+		
+		<div class="caja_principal">
+			<!--Cuadro de texto -->
+			<div class="caja_simulacro">
+				<div class="titulo_simulacro">
+					<h1  class="t1">Entrenamiento</h1>
+				</div>
+				<div class="cuad_azulH">
+					<div class="caja_sombraH">
+						<div class="textoh">
+							<div>
+								<p class="t">Los estudiantes tendrán un espacio para practicar de manera dinámica y divertida, reforzando los temas vistos y evaluados durante el periodo académico.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Circulo con imagen-->
+			<div class="cir_azul">
+				<div class="cir_img">
+					<div>
+						<img class="img_2" src="{{ url_for('static', filename='principal/img/4.png') }}">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--Fin herramienta simulacro--->
+
+
+		<!--Inicio herramienta entrenamientos naranja--->
+		<div class="caja_principal">
+			<!--circulo con imagen--->
+			<div class="cir_naranja">
+				<div class="cir_img">
+					<img src="{{ url_for('static', filename='principal/img/5.png') }}" class="img_1">
+				</div>
+			</div>
+
+			<!--Modulo de texto--->
+			<div class="caja_evaluacion">
+				<div class="titulo_evaluacion">
+					<h1 class="t1">Simulacros</h1>
+				</div>
+				<div class="caja_naranja">
+					<div class="caja_sombra">
+						<div class="textoh">
+							<p class="p1">El estudiante podrá realizar ejercicios de practica , para ver que tanto aprendió durante el entrenamiento , y recibirá incentivos de acuerdo a su desempeño.
+							Compitiendo con los compañeros, y así demostrar sus conocimientos.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!--Fin herramienta entrenamientos--->
+
+		<!--Inicio herramienta estadisticas azul--->
+		
+		<div class="caja_principal">
+			<!--Cuadro de texto -->
+			<div class="caja_simulacro">
+				<div class="titulo_simulacro">
+					<h1  class="t1">Estadisticas</h1>
+				</div>
+				<div class="cuad_azulH">
+					<div class="caja_sombraH">
+						<div class="textoh">
+							<div>
+								<p class="t">Con el desarrollo de evaluaciones, simulacros y entrenamientos, lleva un control estadístico del nivel académico de cada estudiante en sus respectivas asignaturas .</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--Circulo con imagen-->
+			<div class="cir_azul">
+				<div class="cir_img">
+					<div>
+						<img class="img_2" src="{{ url_for('static', filename='principal/img/6.png') }} ">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--Fin herramienta estadisticas--->
+	</main>
+	
+
+	{% endblock %}
