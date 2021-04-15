@@ -1,0 +1,208 @@
+:root{
+	--color_amarillo:#FDAD30;
+	--colo_azul:#069CCC ;
+	--nargenes:60px;
+	--espacios:10px;
+	--espacios-contenido:45px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img{
+	vertical-align: top;
+}
+h1{
+	font-size: 15px;
+	
+}
+p{
+font-size: 50px;
+}
+
+
+
+/*--------------header menú de navegación--------------------------*/
+header{
+  width: 100%;
+  height:100px;
+
+}
+nav{
+	width: 100%;
+	position:fixed;
+	box-shadow: 0 0 10px rgb(0,0,0,.4);
+	z-index: 9;
+}
+/*Contenedor principal de todo el menu y 
+los intercambios para js*/
+.Contenedor-Menú{
+	background:#F8FBFD;
+	height: 80px;
+	color: #000;
+}
+.Contenedor-Menú__Dos{
+	background:#F8FBFD;
+	height: 80px;
+	color: #FDAD30;
+}
+.Contenedor-Menú__3{
+	background:#F8FBFD;
+	height: 80px;
+	color: #069CCC;
+}
+/*********************/
+.Segundo-Contenedor{
+	display: flex;
+	margin: auto;
+	width: 95%;
+	justify-content: space-between;
+	align-items: center;
+}
+.Logo-Pagina,.Logo-Pagina img{
+	height: 80px
+
+}
+nav .Contenedor-Enlaces__Menú a{
+	display: inline-block;
+	padding: 5px 0;
+	margin-right: 40px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	color:inherit;
+}
+nav .Contenedor-Enlaces__Menú a:hover{
+	border-bottom: 2px solid #000;
+	transition: 0.6s;
+
+}/*Linea al poner el cursor sobre el enace*/
+
+/*Contenedor principal de todos los icnos
+de navegación del menú, 3 opciones para js*/
+.Contenedor-iconos__menú{
+	width: 20%;
+	display: flex;
+	margin-right: 30px;
+	justify-content: space-between;
+	color: #000;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.Contenedor-iconos__menúDos{
+	width: 20%;
+	display: flex;
+	margin-right: 30px;
+	justify-content: space-between;
+	color: #FDAD30;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.Contenedor-iconos__menúTres{
+	width: 20%;
+	display: flex;
+	margin-right: 30px;
+	justify-content: space-between;
+	color: #069CCC;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+
+}
+/*****************************/
+.Icono-buscador{
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.texto-iconos__menú{
+	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+/*--------------fin header menú de navegación--------------------------*/
+
+
+
+/*--------------estilo del buscador------------------------------------*/
+#ctn-bars-search{
+	display: flex;
+	justify-content: space-between;
+    position: fixed;
+   	top: -10px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: all 600ms;
+    z-index: 7;
+    box-shadow: 0 0 10px rgb(0,0,0,.4);
+
+}
+#x-buscador{
+	cursor: pointer;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+  
+}
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 15px;
+    color: #777777;
+}
+
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 6;
+    display: none;
+}
+
+/*--------------fin estilo del buscador------------------------------------*/
+
+
+
+

@@ -1,0 +1,206 @@
+
+
+
+
+/*-------------------modal Inicio de Sesión---------------------------------------*/
+.modal-container_Sesión{
+  opacity: 0;
+  visibility:hidden;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container_SesiónDos {
+  background-size: cover;
+  width: 40%;
+  height: 90%;
+  background-image: url("../img/fondo.gif");
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+  /*overflow: hidden;*/
+  
+}
+.modal-container_cerrarS{
+  transform: translateY(-200%);
+}
+.cerrar-Sesion{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+} 
+
+
+
+
+
+
+/********************Inicio sesion*******************************/
+.logoSesion{
+	width: 250px;
+	height: 143px;
+
+}
+
+/**Contenedor principal**/
+.contenedor-principal__Sesion{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 60%;
+  margin-top:-60px;
+}
+ 
+/**Formulario**/
+.formularioSesion {
+    background-color: #F5F5F5;
+    width: 67%;
+    height: 89%;
+    padding: 15px;
+    box-shadow: 10px 10px #E5E4E4;
+}
+
+/**Titulos  del formulario**/
+.tituloSesion {
+  padding: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    margin: 0 auto;
+    color: #0499D8;
+}
+
+.SubtituloSesion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   	margin-bottom: 0px;
+    padding: 3px;
+}
+.SubtituloDos-Sesion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   	margin-bottom: 15px;
+    padding: 3px;
+}
+
+
+/*Datos de ingreso*/
+
+.Ingresar-Usuario {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px; 
+  padding-left: 40px ;
+  border-left: none;
+  border-top:4px solid #FDAD30; 
+  border-right: none;
+  border-bottom: 4px solid #FDAD30;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  width: 75%;
+  height: 42px;
+  background: #F5F5F5;
+  outline: none;
+  background-image: url(../sesion/5.png); 
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+.formularioSesion input[type=password] {
+
+  background-image: url("../sesion/6.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat ;
+  padding-left: 40px ;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px; 
+  border-left: none;
+  border-top:4px solid #FDAD30; 
+  border-right: none;
+  border-bottom: 4px solid #FDAD30;
+  margin-bottom: 5px;
+  margin-left: 14px;
+  width: 75%;
+  height: 44px;
+  outline: none;
+}
+
+/*Boton de continuar */
+.caja-boton{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.boton_sesion{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #0499D8;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+/*Texto opcion de registro */
+.Pregunta-Registro {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+   	margin-bottom: 0px; 
+    padding: 3px;
+
+}
+.linkRegistro{
+	color: #0499D8;
+
+  cursor: pointer;
+
+}
+/*imagenes del  formulario de sesion*/
+.imgSesionIzq
+{
+	margin-top: -160px;
+	margin-left: -118px
+}
+.imgSesionDer
+{
+	margin-top: -220px;
+	margin-left: 240px
+}
+
+/*formato del texto al escribir sobre el formulario */
+::placeholder {
+
+     font-family: 'Open Sans' sans-serif;
+     font-size: 18px;
+     font-weight: 300;
+     color: #000;
+
+    } 

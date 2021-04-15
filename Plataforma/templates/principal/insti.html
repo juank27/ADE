@@ -1,0 +1,69 @@
+{% extends 'principal/menu.html' %}
+{% block title %} Institución{% endblock %}
+{% block content %}
+	<!--institucion-->
+	<main>
+		<div class="insti">
+
+			<div ><img class="adeI" src="{{ url_for('static', filename='principal/img/ade.png') }}"></div>
+			<p class="lineasI"></p>
+			<div >
+			<p class="tituloI">Institución Pionera</p></div>
+		</div>
+		<section class="institucion_I">
+			<div class="contenIns_I">
+				
+				<div class="escudo1">
+					<div class="escudo">
+					<img class="escudo_img" src="{{ url_for('static', filename='principal/img/23.png') }}">
+					</div>
+					<p class="escudo_txt">I.E.D Carmen de Carupa</p>
+				</div>
+			<div class="insTexto">
+			<div class="mis_vis">
+				<div class="vision_titulo">
+					<h1  class="hhI">Visión</h1>
+
+					</div>
+					<div class="cua12_I">
+						
+						<div class="cua2_I">
+							
+							<div class="descripcionI">
+								<p   class="phI">Formar bachilleres técnicos en procesamiento de alimentos, como personas íntegras, autónomas, de éxito, líderes y con un alto sentido de pertenencia y agremiación. </p>
+							</div>
+							<div class="vision_img">
+								<img class="imgI" src="{{ url_for('static', filename='principal/img/24.png') }}">
+							</div>
+						</div>
+				</div>	
+			</div>
+			<div class="mis_vis">
+				<div class="mision_titulo">
+					<h1  class="hhI">Misión</h1>
+
+					</div>
+					<div class="cua1_I">
+						
+						<div class="cua2_I">
+							
+							<div class="descripcionI">
+								<p   class="phI">La institución busca formar empresarios líderes en valores, capaces de organizar y dirigir las comunidades, conscientes de la riqueza natural, para explotarla racionalmente, como fuente de desarrollo a nivel municipal, regional y nacional.</p>
+								
+							</div>
+							<div class="vision_img">
+								<img  class="imgI" src="{{ url_for('static', filename='principal/img/25.png') }}">
+							</div>
+							
+						</div>
+				</div>	
+			</div>
+			
+			</div>
+			</div>
+		</section>
+	</main>
+	
+	{% endblock %}
+
+	

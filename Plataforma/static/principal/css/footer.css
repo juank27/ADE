@@ -1,0 +1,92 @@
+/*footer*/
+footer{
+	width: 100%;
+}
+/*Contenedor principal de todo el foteer,caja azul */
+.contenedor_prinFooter{
+	
+	background: #069CCC ;
+	height: 350px;
+}
+.final2{
+	margin-top: 40px;
+	margin-left: : 60px;
+	height: 270px;
+	width:200px;
+
+	
+}
+.final{
+	height: 300px;
+}
+
+
+.contenedor_DosFooter{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+/*cajon amarillo*/
+.footer_amarilo{
+	width: 40%;
+	background: #FDAD30;
+	height: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+.flis{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+
+}
+.linea{
+
+  content:'';
+  margin: auto;
+  width:100%;
+  height: 12px;
+  background:#000;
+  margin-bottom: 5px;
+  margin-top: -35px;
+  position: absolute;
+ 
+}
+.imaF{
+
+	text-align: left;
+
+}
+.cont-textF{
+	padding: 20px 20px;
+	width: 100%;
+
+	
+}
+.tFinal{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	width: 90%;
+	
+}
+.pFinal{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 19px;
+	text-align: justify;
+	width: 90%	
+	font-weight: 300;
+}
+.redes{
+
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+	margin-top:20px;
+	font-size: 40px;
+}
+
+

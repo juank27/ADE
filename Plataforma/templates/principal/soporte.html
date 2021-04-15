@@ -1,0 +1,105 @@
+
+	{% extends 'principal/menu.html' %}
+	{% block title %} soporte{% endblock %}
+	{% block content %}
+	<!--Soporte-->
+	<main>
+		<div class="soporteS">
+
+			<div ><img class="adeS" src="{{ url_for('static', filename='principal/img/ade.png') }}"></div>
+			<p class="lineasS"></p>
+			<div >
+			<p class="tituloS">Soporte</p></div>
+		</div>
+		<section class="contenedorS">
+
+				<div class="contenedor-2S">
+
+				<div class="soporte1S">
+
+					<div class="imagen2S">
+						<img class="img1S" src="{{ url_for('static', filename='principal/img/37.png') }}">
+					</div>
+					<div class="textoS">
+						<br><h1  class="azulS">Como Empezar</h1><br>
+						<p class="textS">Ingresa y conoce como puedes empezar hacer uso de ADE.</p>
+					</div>
+					
+				</div>
+				<div class="soporte1S">
+					<div class="imagen2S">
+						<img class="img1S" src="{{ url_for('static', filename='principal/img/38.png') }}">
+					</div>
+					<div class="textoS">
+
+						<br><h1 class="amarilloS">Cuentas Y Contraseñas</h1><br>
+						<p class="textS">¿Olvidaste tu contraseña y tienes problemas para ngresar a tu cuenta?.</p>
+					</div>
+					
+				</div>
+				<div class="soporte1S">
+					<div class="imagen2S">
+						<img class="img1S" src="{{ url_for('static', filename='principal/img/39.png') }}">
+					</div>
+					<div class="textoS">
+
+						<br><h1  class="azulS">Problemas Tecnicos </h1><br>
+						<p class="textS">si tienes problemas para crear el material o para desarrollarlo ¡ingresa aquí!.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</section>
+		<section class="contenedorS">
+
+				<div class="contenedor-2S">
+
+				<div class="soporte1S">
+
+					<div class="imagen2S">
+						<img class="img1S" src="{{ url_for('static', filename='principal/img/40.png') }}">
+					</div>
+					<div class="textoS">
+						<br><h1  class="azulS">Preguntas Frecuentes</h1><br>
+						<p class="textS">Conoce las preguntas mas frecuentes sobre el funcionamiento de ADE.</p>
+					</div>
+					
+				</div>
+				<div class="soporte1S">
+					<div class="imagen2S">
+						<a  href="bot.html" target="_blank"><img class="img1S" src="{{ url_for('static', filename='principal/img/41.png') }}"></a>
+					</div>
+					<a class="LS" href="bot.html" target="_blank">
+						<div class="textoS">
+
+						<br><h1 class="amarilloS">Bot Conversasional </h1><br>
+						<p class="textS">Si quieres una mejor respuesta conversa con nuestro bot .</p>
+					</div>
+					</a>
+					
+				</div>
+				<div class="soporte1S">
+					<div class="imagen2S">
+						<a href="contacto.html" target="_blank">
+							<img class="img1S" src="{{ url_for('static', filename='principal/img/42.png') }}">
+						</a>
+					</div>
+					<a class="LS" href="contacto.html" target="_blank">
+						<div class="textoS">
+
+						<br><h1  class="azulS">Comunícate con Nosotros</h1><br>
+						<p class="textS">Si ninguna de las opciones te funciono , llena el formulario de contacto y te ayudaremos.</p>
+					</div>
+					</a>
+					
+				</div>
+				
+			</div>
+
+		</section>
+	</main>
+
+	{% endblock %}
+
