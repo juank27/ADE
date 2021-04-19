@@ -24,21 +24,21 @@
 			 	<!--Contenedor formulario-->
 			 	<div class="contenedor_formularioContactos">
 			 		<!--Formulario-->
-					<form class="formularioContactos">	
+					<form action="/enviarInscripciones" class="formularioContactos" method="POST">
 						<fieldset class="C_datosContacto"><!--Caja Contenedor datos contactos-->
 							<p class="tituloF_Contactos">
 								<strong>CONTACTO DE INSCRIPCIONES</strong>
 							</p>
 							<p class="subtituloF_C">Llena los siguientes datos y ponte en
 							contacto con nosotros</p>
-							<input type="text" placeholder="Nombre del rector"   name="">
-							<input type="text" placeholder="Correo electronico"  name="">
-							<input type="text" placeholder="Numero telefonico"  name="">
-							<input type="text" placeholder="Nombre de la institución"  name="">
-							<input type="text" placeholder="Código DANE"  name="">
-							<input type="text" placeholder="Municipio"  name="">
-							<input type="text" placeholder="Numero de usuarios"  name="">
-							<input type="text" placeholder="Comentarios adicionales"  name="">
+							<input type="text" placeholder="Nombre del rector"   name="nameRector">
+							<input type="text" placeholder="Correo electronico"  name="email">
+							<input type="text" placeholder="Numero telefonico"  name="telefono">
+							<input type="text" placeholder="Nombre de la institución"  name="nameInstitucion">
+							<input type="text" placeholder="Código DANE"  name="codDane">
+							<input type="text" placeholder="Municipio"  name="municipio">
+							<input type="text" placeholder="Numero de usuarios"  name="numUsuarios">
+							<input type="text" placeholder="Comentarios adicionales"  name="comentarios">
 							<div class="contenedor_boton_enviar">
 								<input type="submit" class="boton_FI" placeholder="Enviar">	
 							</div>

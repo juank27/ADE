@@ -1,7 +1,9 @@
 import flask
 from flask import render_template
+
 inicio= flask.Blueprint('inicio', __name__)
 
+#rutas servicios de la pagina principal 
 @inicio.route('/insti')
 def insti():
 	return render_template('principal/insti.html')
@@ -20,5 +22,3 @@ def soporte():
 @inicio.route('/herramientas')
 def herramientas():
 	return render_template('principal/herramientas.html')
-
-
