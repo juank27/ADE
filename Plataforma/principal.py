@@ -13,12 +13,15 @@ def nosotros():
 @inicio.route('/usuarios')
 def usuarios():
 	return render_template('principal/usuarios.html')
-@inicio.route('/contacto')
-def contacto():
-	return render_template('principal/contacto.html')
+#@inicio.route('/contacto')
+# def contacto():
+#	return render_template('principal/contacto.html')
 @inicio.route('/soporte')
 def soporte():
 	return render_template('principal/soporte.html')
 @inicio.route('/herramientas')
 def herramientas():
 	return render_template('principal/herramientas.html')
+@inicio.route('/jquery')
+def jquery():
+	return render_template('jquery-3.1.1.min.js')

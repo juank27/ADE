@@ -14,8 +14,6 @@ window.addEventListener('scroll', function(){
     menus();
 });
 
-
-
 /************Funciones del menú de navegación***************************/
 //variables
 let nav= document.getElementById('nav');
