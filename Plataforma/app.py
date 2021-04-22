@@ -1,6 +1,8 @@
 import flask
 import threading
-from flask import render_template,request
+from flask import g #variable global
+from flask import render_template,request, copy_current_request_context, flash
+from flask_mysqldb import MySQL
 from flask_mail import Mail,Message
 from flask_mysqldb import MySQL
 from principal import inicio
@@ -24,18 +26,16 @@ app.config['MAIL_USE_SSL'] = True
 
 mail = Mail()
 
+def send_email(user_email, asunto):
+	msg = Message(asunto, sender = 'adeplataforma@gmail.com', recipients = [user_email] )
+	msg.html = render_template('principal/Registro_institucion.html')
+	mail.send(msg)
+	
 @app.route('/')
 def index():
 	return render_template('principal/index.html')
 
 app.register_blueprint(inicio)
-
-@app.route('/contacto')
-def contacto():
-	cur = mysql.connection.cursor()
-	cur.execute('SELECT NOMBRE_ESTABLECIMIENTO FROM institucion_1')
-	data = cur.fetchall()
-	return render_template('principal/contacto.html', institucion = data)
 
 #configuracion 
 @app.route('/enviarInscripciones' , methods=['GET','POST'])
@@ -49,12 +49,14 @@ def enviarInscripciones():
 		municipio = request.form['municipio']
 		numUsuarios = request.form['numUsuarios']
 		comentarios = request.form['comentarios']
-		asunto = 'Registro ' + nameInstitucion
-		msg = Message(asunto, sender = 'adeplataforma@gmail.com', recipients = [email] )
-		msg.html = render_template('principal/Registro_institucion.html' , nombre = nameRector)
-		mail.send(msg)
- 
-	return render_template('principal/index.html')
+		asunto = 'Registro ' 
+		@copy_current_request_context 
+		def send_message(email, asunto):
+			send_email(email, asunto)
+		sender = threading.Thread(name = 'mail', target = send_message, args = (email , asunto))
+		sender.start()
+		flash('Revisa tu correo')
+	return render_template('principal/contacto.html')
 
 if __name__ == '__main__':
 	mail.init_app(app)

@@ -13,9 +13,9 @@ def nosotros():
 @inicio.route('/usuarios')
 def usuarios():
 	return render_template('principal/usuarios.html')
-#@inicio.route('/contacto')
-# def contacto():
-#	return render_template('principal/contacto.html')
+@inicio.route('/contacto')
+def contacto():
+	return render_template('principal/contacto.html')
 @inicio.route('/soporte')
 def soporte():
 	return render_template('principal/soporte.html')

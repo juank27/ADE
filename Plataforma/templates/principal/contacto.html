@@ -1,10 +1,5 @@
 {% extends 'principal/menu.html' %}
 {% block title %}Contacto{% endblock %}
-{% block links %}
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/select2.css') }}">
-	<script src="{{ url_for('static', filename='principal/js/jquery-3.1.1.min.js') }}" ></script>
-	<script src="{{ url_for('static', filename='principal/js/select2.js') }}"></script>
-{% endblock %}
 {% block content %}
 
 		<!-----------------------------------------------Encabezado---------------------------------------------------------------------->
@@ -40,21 +35,7 @@
 							<input type="text" placeholder="Nombre del rector"   name="nameRector">
 							<input type="text" placeholder="Correo electronico"  name="email">
 							<input type="text" placeholder="Numero telefonico"  name="telefono">
-							<!--<input type="text" placeholder="Nombre de la institución"  name="nameInstitucion">-->
-							<script type="text/javascript">
-								$(document).ready(function(){
-										$('#mibuscador').select2();
-								});
-							</script>
-
-							<div style="width: 500px; ">
-								<select id="mibuscador" style="width: 500px;">
-									<option> Institución</option>
-									{%for ied in institucion %}
-										<option value="">{{ied.0}}</option>
-									{%endfor%}
-								</select>
-							</div>
+							<input type="text" placeholder="Nombre de la institución"  name="nameInstitucion">
 							<input type="text" placeholder="Código DANE"  name="codDane">
 							<input type="text" placeholder="Municipio"  name="municipio">
 							<input type="text" placeholder="Numero de usuarios"  name="numUsuarios">
@@ -65,6 +46,14 @@
 						</fieldset>
 					</form>
 					<!--Fin formulario-->
+					<!--captura mensajes del servidor -->
+					{% with messages = get_flashed_messages() %} 
+					{% if messages %}
+					{%for mesage in messages %}
+						<p>{{ mesage }}</p>
+					{% endfor %}
+					{% endif %}
+					{% endwith %}
 				</div>
 				<!--Fin contenedor formulario-->
 			 </div>
