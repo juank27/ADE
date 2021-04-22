@@ -30,6 +30,7 @@ def send_email(user_email, asunto):
 	msg = Message(asunto, sender = 'adeplataforma@gmail.com', recipients = [user_email] )
 	msg.html = render_template('principal/Registro_institucion.html')
 	mail.send(msg)
+
 	
 @app.route('/')
 def index():
@@ -44,12 +45,13 @@ def enviarInscripciones():
 		nameRector = request.form['nameRector']
 		email = request.form['email']
 		telefono = request.form['telefono']
-		nameInstitucion = request.form['nameInstitucion']
+		#nameInstitucion = request.form['nameInstitucion']
 		codDane = request.form['codDane']
 		municipio = request.form['municipio']
 		numUsuarios = request.form['numUsuarios']
 		comentarios = request.form['comentarios']
 		asunto = 'Registro ' 
+
 		@copy_current_request_context 
 		def send_message(email, asunto):
 			send_email(email, asunto)
