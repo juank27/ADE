@@ -25,3 +25,6 @@ def herramientas():
 @inicio.route('/jquery')
 def jquery():
 	return render_template('jquery-3.1.1.min.js')
+@inicio.route('/registroInstitucion')
+def regInstitucion():
+	return render_template('principal/Registro_institucion.html')
