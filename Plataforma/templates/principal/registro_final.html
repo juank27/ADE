@@ -62,7 +62,7 @@
 					 	<!--Contenedor formulario-->
 					 	<div class="contenedor_form">
 					 		<!--Formulario-->
-							<form class="formulario"  action="http://127.0.0.1:5000/registroFinal" method="POST">	
+							<form class="formulario"  action="/index" method="POST">	
 									<!--Titulo de formulario-->
 									<p class="titulo1C">
 										<strong>LA INSTITUCIÓN HA SIDO REGISTRADA</strong>
@@ -70,18 +70,22 @@
 									<!--Texto del formulario-->
 									<p class="textoC">Los siguientes datos son la caracterisacion de la Institución registrada </p>
 										<!--Cajas de texto formulario-->
-										<input type="text" placeholder="Institución" name="institucion" value="{{datos.3}}" disabled="">
-										<input type="text" placeholder="Rector" name="rector" value="{{datos.0}}" disabled="">
-										<input type="text" placeholder="Email" name="email" value="{{datos.1}}" disabled="">
-										<input type="text" placeholder="Telefono" name="telefono" value="{{datos.2}}" disabled="">
-										<input type="text" placeholder="Código DANE" name="dane" value="{{datos.4}}" disabled="">
-										<input type="text" placeholder="Departamento" name="departamento" value="{{datos.5}}" disabled="">
-										<input type="text" placeholder="Numero de Usuarios" name="usuarios" value="{{datos.6}}" disabled=""> 
-										
+										<p class="tituloF_Contactos" style="color: #0499D8;">
+											<strong>CODIGO DIRECTIVOS</strong>
+										</p>
+										<input type="text" placeholder="Directivo" name="directivo" value="{{codigos.0}}" disabled="">
+										<p class="tituloF_Contactos" style="color: #0499D8;">
+											<strong>CODIGO DOCENTES</strong>
+										</p>
+										<input type="text" placeholder="Docente" name="docente" value="{{codigos.1}}" disabled="">
+										<p class="tituloF_Contactos" style="color: #0499D8;">
+											<strong>CODIGO ESTUDIANTES</strong>
+										</p>
+										<input type="text" placeholder="Estudiante" name="estudiante" value="{{codigos.2}}" disabled="">
 										<!--Contenedor de boton enviar-->
 										<div class="contenedor_boton_enviar">
 											<!--Boton enviar-->
-											<p class="textoC">Confirme que los datos son correctos para obtener los codigos de cada usuario </p>
+											<p class="textoC">Datos enviadosal correo </p>
 											<button type="submit" class="boton">Confirmar</button>
 										</div>
 							</form>
