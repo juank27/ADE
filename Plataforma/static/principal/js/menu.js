@@ -144,11 +144,7 @@ let abrirSesionLink= document.querySelectorAll(".linkSesion")[0];
 //variables modal de registro 
  
 //directivo
-let modalIntercambioDi= document.querySelectorAll(".modal-container_intercambioDirectivos")[0];
-let modalIntercambioDiDos= document.querySelectorAll(".modal-container_intercambioDosDirectivos")[0];
-let intercambioUno= document.querySelectorAll(".intercambioUno")[0];
-let cerrarIntercambioD= document.querySelectorAll(".cerrar-IntercambioDirectivos")[0];
-let abrirSesionLinkD= document.querySelectorAll(".linkSesionD")[0];
+
 //Estudiante
 let modalIntercambioE= document.querySelectorAll(".modal-container_intercambioEstudiantes")[0];
 let modalIntercambioEDos= document.querySelectorAll(".modal-container_intercambioDosEstudiantes")[0];
@@ -256,46 +252,7 @@ abrirSesionLink.addEventListener("click",function(e){
 //////////////////////////////////////////////////////////////////////
 
 /*modal registro*/
-/*Directivos*/
-intercambioUno.addEventListener("click",function(e){
-    e.preventDefault();
-    modalIntercambioDi.style.opacity="1";
-    modalIntercambioDi.style.visibility="visible";
-    modalIntercambioDiDos.classList.toggle("modal-container_cerrarID")
-})
-cerrarIntercambioD.addEventListener("click",function(){
-    modalIntercambioDiDos.classList.toggle("modal-container_cerrarID");
- 
-    
-    setTimeout(function(){
 
-       modalIntercambioDi.style.opacity="0";
-        modalIntercambioDi.style.visibility="hidden";
-        
-
-    },900)
-})
-
-abrirSesionLinkD.addEventListener("click",function(e){
-
-    modalUsuarioDos.classList.toggle("modal-container_cerrarU");
-    modalIntercambioDiDos.classList.toggle("modal-container_cerrarID");
-
-    setTimeout(function(){
-
-        modalUsuario.style.opacity="0";
-        modalUsuario.style.visibility="hidden";
-        modalIntercambioDi.style.opacity="0";
-        modalIntercambioDi.style.visibility="hidden";
-
-    },900)
-
-    e.preventDefault();
-    modalSesion.style.opacity="1";
-    modalSesion.style.visibility="visible";
-    modalSesionDos.classList.toggle("modal-container_cerrarS")
-
-})
 
 
 /*Docentes*/

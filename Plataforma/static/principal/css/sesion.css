@@ -126,13 +126,13 @@
   height: 42px;
   background: #F5F5F5;
   outline: none;
-  background-image: url(../sesion/5.png); 
+  background-image: url(../img/36.png); 
   background-position: 0px 0px;
   background-repeat: no-repeat;
 }
 .formularioSesion input[type=password] {
 
-  background-image: url("../sesion/6.png");
+  background-image: url("../img/35.png");
   background-position: 0px 0px;
   background-repeat: no-repeat ;
   padding-left: 40px ;
