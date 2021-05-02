@@ -1,4 +1,4 @@
-{% extends 'principal/menu.html' %}
+<!{% extends 'principal/menu.html' %}
 {% block title %} Inicio{% endblock %}
 {% block preloader %}
 <!-- preloader -->
@@ -7,6 +7,7 @@
 		<div class="lds-circle"><div></div></div>
 	</div>
 {% endblock %}
+
 {% block content %}
 	
 	
@@ -32,7 +33,7 @@
 						</div>
 
 					<div class="boton">
-							<button class="r cta3">Registrarse</button>
+							<button class="r abrir-Usuario2">Registrarse</button>
 						</div>
 					<img class="logo2" src="{{ url_for('static', filename='principal/img/10.png') }}">
 				</div>
@@ -232,8 +233,5 @@
 	</div>
 	
 
-	
-
-	
 {% endblock %}
 

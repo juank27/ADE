@@ -1,0 +1,24 @@
+.uno{
+    -webkit-clip-path:circle(0.0% at 50% 50%);
+    clip-path: circle(0.0% at 50% 50%);
+}
+.dos{
+    -webkit-clip-path:circle(70.7% at 50% 50%);
+    clip-path: circle(70.7% at 50% 50%);
+}
+.enlace{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: :0;
+    flex-direction: column;
+    background: #fff;
+
+    width: 100%;
+    transition:all 2s ease;
+    
+
+}

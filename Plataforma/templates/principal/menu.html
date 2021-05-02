@@ -21,6 +21,12 @@
 	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
 	<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(136817)</script>
 	<link rel="icon" type="image/png" href="{{ url_for('static', filename='principal/img/bombillo.png') }}" sizes="32x32">
+
+
+<!--	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/select2.css') }}">
+	<script src="{{ url_for('static', filename='principal/js/jquery-3.1.1.min.js') }}" ></script>
+	<script src="{{ url_for('static', filename='principal/js/select2.js') }}"></script>
+-->
 </head>
 <body class="hidden"  >
 	
@@ -192,13 +198,7 @@
 		
 			<div class="contenedor-Imagenes_TU"><!--Contenerdor total  de imagenes -->
 
-				<div class="tipo-UsuarioI"><!--contendor gris de cada imagen-->
-
-					<div class="cont-imgBlanco"><!--contendor blanco de cada imagen-->
-						<img class="imagen-usuario" src="{{ url_for('static', filename='principal/img/28.png') }}"><!--imagen-->
-					</div>
-	
-				</div>
+				
 				<div class="tipo-UsuarioI"><!--contendor gris de cada imagen-->
 
 					<div class="cont-imgBlanco"><!--contendor blanco de cada imagen-->
@@ -224,12 +224,7 @@
 
 			<div class="contenedor-Texto_TU">
 
-				<div class="Contenedor-NombreAmarillo intercambioUno"> <!--Cajas de nombre color amarillo-->
-
 				
-						<h1 class="txt_nombres-TU">DIRECTIVO</h1><!--Nombre tipo de usuario-->
-	
-				</div>
 				<div class="Contenedor-NombreAzul intercambioDos"> <!--Cajas de nombre color azul -->
 				
 						<h1 class="txt_nombres-TU">DOCENTE</h1>
@@ -243,7 +238,7 @@
 					
 				</div>
 			</div>
-			<p class="Pregunta-Sesion">¿Ya tienes una cuenta?  <a class="linkSesion" href="#">Iniciar Sesión </a> </p>
+			<p style="margin-bottom: 10%" class="Pregunta-Sesion">¿Ya tienes una cuenta?  <a class="linkSesion" href="#">Iniciar Sesión </a> </p>
 
 		</section>
 
@@ -257,82 +252,7 @@
 	<!--********************+Modales de intercambio para egistrar cada tipo de usuario*****************-->
 	<!--De aqui en adelante los estilos se encuentran el css registro-->
 
-	<!--Directivo Docentes-->
-	<div class="modal-container_intercambioDirectivos"><!--Contenedor de transparencia negra-->
-		<div class="modal-container_intercambioDosDirectivos modal-container_cerrarID"><!--Contenedor  central blanco-->
-			<span class="cerrar-IntercambioDirectivos"> <i class="fas fa-times"></i></span><!--icono de la x-->
-
-		
-			<div class="CImagen_modalRegistro"><!--Contenedor de imagenes del modal -->
-				<!--Imagenes -->
-				<img src="{{ url_for('static', filename='principal/img/31.png') }}" alt="" class="imgRegistroIzq">
-				<img src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoRegistro">
-				<img src="{{ url_for('static', filename='principal/img/32.png') }}" alt="" class="imgRegistroDer">
-			</div>
-			<!--Contenedor principal del formulario -->
-			<div class="contenedor_prinRegistro">
-
-				<!--Formulario de registro -->
-				<form class="formularioRegistro">
-
-					<!--Contendor de los titulos del formulario  -->
-					<div class="txt_registro " >
-						<p class="tituloRegistrar"><strong>Registrar</strong></p>
-						<p class="subtituloRegistrar">
-					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
-					    </p>
-					  </div>
-					<!--Selectores de intercambio-------------------------------------->
-					<!--directivos-->
-									  
-				    	<div class="directivo ">
-				    	<select name="" id="">
-				    		<option value="">Tipo Usuario</option>
-				    		<option value="rector">Rector</option>
-				    		<option value="cooAcademico">Coordinador Academico </option>
-				    		<option value="cooConvivenci">Coordinador Convivencia </option>
-				    	</select>
-				    </div>  
-				    <!--------------->
-
-				 	 <!----Datos de cada formulario---->
-				    <div class="datos">
-				    	<div class="form_d"><!--Contenedor de datos -->
-				    		<div class="div_datos"><!--Division de cada uno de los datos-->
-				    		<input type="text" placeholder="Correo Electronico"  >
-				    		<input type="text" placeholder="Nombre Completo" >
-				    	</div>
-				    	<div class="div_datos">
-				    		<input type="text" placeholder="Num Identificacion" >
-				    		<input type="text" placeholder="Codigo Institucional" >
-				    	</div>
-				    	<div class="div_datos">
-				    		<input type="password" placeholder="Contraseña" class="entradaDos">
-				    		<input type="password" placeholder="Verif contraseña" class="entrada">
-				    	</div>
-				    	</div>
-				    	<!--Imagen ubicada al lado derecho del formulario --->
-				    	 <div class="imgRegistroDer2">
-						<img src="{{ url_for('static', filename='principal/img/33.png') }}" alt="" width="100" height="300">
-						</div>
-				    </div>
-				    <!--Pate final del formulario de registro-->
-				    <div class="Final_Registro">
-				       <div class="bt_regis"><!--division boton continuar-->
-				       	 <a href="error404.html" class="boton_registro">continuar</a><!--Boton-->
-				       </div>
-				         <!--Pregunta si ya tiene cuenta-->
-				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionD">Inisiar Sesión</a></p>
-				    </div>
-
-
-				</form>
-
-				
-			</div>
-						
-		</div>
-	</div>
+	
 
 
 <!-- Etudiantes-->
@@ -535,6 +455,7 @@
 	<script src="{{ url_for('static', filename='principal/js/menu.js') }}"></script>
 	<script src="{{ url_for('static', filename='principal/js/jquery.js') }}"></script>
 	
+	<script src="{{ url_for('static', filename='principal/js/inicio.js') }}"></script>
 
 
 

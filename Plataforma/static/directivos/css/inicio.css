@@ -1,0 +1,128 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.uno{
+    -webkit-clip-path:circle(0.0% at 50% 50%);
+    clip-path: circle(0.0% at 50% 50%);
+}
+.dos{
+    -webkit-clip-path:circle(70.7% at 50% 50%);
+    clip-path: circle(70.7% at 50% 50%);
+}
+.enlace{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: :0;
+    
+    background:rgb(0,0,0,0.9);
+
+    width: 100%;
+    transition:all 2s ease;
+    
+
+}
+.bienvenida{
+    background: #fff;
+    height: 50%;
+    padding: 5px 15px;
+    border-radius: 12px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_1{
+ 
+   
+    background: rgb(4,153,216,0.5);
+    text-align: center;
+    border-radius: 12px;
+    height: 98vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.contenedor_2{
+  
+    background-color: #092838;
+    background-size: cover;
+    width: 40%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.contenedorImgAde{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.boton2{
+    width: 200px; 
+    height: 50px;
+    border-radius: 12px;
+    background-color: #56AEFF;
+    color: white;
+    border: 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.imgAde{
+
+    width: 250px;
+    height: 100px;
+}
+
+.contenedorImgAvatar1{
+    border-radius: 250px;
+    margin-top: 40px;
+    
+}
+.contenedorAvatar1{
+    cursor: pointer;
+
+}
+.avatar{
+    border-radius: 200px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+    width: 180px;
+    height: 180px;
+}
+
+
+.contenedorGifAvatar{
+    margin-top: -200px;
+}
+
+.gifAvatar{
+    height: 200px; 
+    width: 200px;
+}
+
+
+
+
+.contenerdorNombreRector{
+  
+    color: white;
+    font-size: 30px;
+}
+.contenedorCargo{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    
+}

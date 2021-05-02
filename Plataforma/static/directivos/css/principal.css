@@ -1,0 +1,128 @@
+body{
+    
+    overflow-y: scroll;
+}
+
+.contenedor_1{
+    z-index: 9;
+    width: 100%;
+    height: 98vh;
+    display: flex;
+     
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_2{
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.contenedorVideo{
+    margin: 2% 2% 2% 2%;
+    width: 50%;
+    height: 40%;
+    background-color:  #FCAA27;
+    border-radius: 12px;
+}
+
+.contenedorVideoSub1{
+    background-color:#FCAA27;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.video{
+    border-left: solid 5px #FCAA27;
+    border-top: solid 5px #FCAA27;
+    border-right: solid 5px #FCAA27;
+    border-bottom: solid 5px #FCAA27;
+}
+
+.contenedorNotasTitulo{
+    display: inline-block;
+    margin: 2% 2% 0 2%;
+    width: 96%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.contenedorTitulo{
+
+    margin-top: -4%;
+    font-family: 'Open Sans', sans-serif;
+    color: #069CCC;
+
+}
+
+.contenedorNotas1{
+    width: 50%;
+    height: 90%;
+    overflow-x: scroll;
+}
+
+#form{
+    display: inline-flex;
+    border-radius: 12px;
+}
+textarea{
+    margin-left: 6px;
+    border-left: solid 5px #FCAA27;
+    border-top: solid 5px #FCAA27;
+    border-right: solid 5px #FCAA27;
+    border-bottom: solid 5px #FCAA27;
+    border-radius: 12px;
+}
+
+.btn{
+    width:5%;
+    height:10%;
+    outline:none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 50px;
+    padding: 0;
+     
+}
+.btn img{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.btn2{
+    width:5%;
+    height:10%;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 50px;
+    outline:none;
+  }
+
+.btn2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+

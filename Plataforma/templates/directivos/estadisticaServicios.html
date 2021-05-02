@@ -1,0 +1,75 @@
+<html>
+    <head>
+      
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/estilo_estadisticaServicios.css') }}">
+        <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <!--Contenedor pagina completa-->
+            <div class="contenedor_1">
+                <!--Contenedor de botones y titulos-->
+                <div class="contenedor_2">
+        <!--------------------------------------------------------------------------------------------->             
+                    <!--Contenedor de los dos botones de la parte superior-->
+                    <div class="contenedorArriba" >
+                       
+                        <div class="contenedorBoton">
+                            <div class="contenedorBotonSombra">
+                                <div class="contenedorBoton1">
+                                        <button class="boton ver">
+                                            <img src="{{ url_for('static', filename='directivos/img/39.png') }} ">
+                                            <h1>Entrenamientos</h1>
+                                        </button>
+                                        
+                                </div>
+                           </div>
+                        </div>
+                        <div class="contenedorBoton">
+                            <div class="contenedorBotonSombra">
+                                <div class="contenedorBoton1">
+                                        <button class="boton ver2">
+                                            <img src="{{ url_for('static', filename='directivos/img/40.png') }} " alt="">
+                                            <h1>Simulacros</h1>
+                                        </button>
+                                        
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <!--Fin del contenedor de los dos botones de la parte superior-->
+        <!--------------------------------------------------------------------------------------------->             
+                   
+        <!--Contenedor de los dos botones de la parte inferior-->
+                    <div class="contenedorAbajo">
+                        
+                        <div class="contenedorBotonL">
+                            <div class="contenedorBotonSombraL">
+                                <div class="contenedorBoton1L">
+                                        <button class="botonL ver3">
+                                            <img src="{{ url_for('static', filename='directivos/img/41.png') }} " alt="">
+                                            <h1>Evaluaciones</h1>
+                                        </button>
+                                        
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                 
+                    </div>
+                    <!--fin contenedor de botones y titulos-->
+                </div>
+            </div>
+        </main>
+        <div  class="crear_cursos">
+                        <div title="CERRAR" class="cerrar"><i class="fas fa-times-circle"></i></div>
+                        <iframe class="crear_cursos2" scrolling="no" src="crear_cursos" >
+                        
+                    </iframe>
+                   
+     </div>
+      <script src="{{ url_for('static', filename='directivos/js/crear.js') }}"></script>
+    </body>
+</html>

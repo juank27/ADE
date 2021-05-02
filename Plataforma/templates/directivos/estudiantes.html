@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/estudiantes.css') }}">
+	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	 <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body>
+	
+	<div class="seccion">
+		<div class="barra_superior">
+				<a  class="ver" href="#">Asignatura</a>
+				
+				<div style="margin-right: 10px; margin-left: 10px;"><i class="fas fa-grip-lines-vertical"></i></div>
+				
+				<a  href="menu">Inicio</a>
+	</div>
+		<div class="panel_inferior">
+			<div class="informacion">
+				<img class="logo" src="{{ url_for('static', filename='directivos/img/52.png') }}">
+				<h1>Sistemas-704</h1>
+				<p>Codigo:245678</p>
+			</div>
+			
+			<div class="contenedorLista">
+                        <table>
+                         	<tr border="0">
+                         		<th>ID</th>
+                         		<th>Foto</th>
+                         		<th>Nombre</th>
+                         		<th>Correo</th>
+                         	</tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            <tr>
+                            	<td >1</td>
+                                <td ><img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}"></td>
+                                <td style="width: 40%;">Nayibe Patriica Casas Pelaez </td>
+                                <td>nayibepelaez03@gmail.com</td>
+                            </tr>
+                            
+                         	
+                            
+                              
+ 
+                        </table>
+                </div>
+			
+		</div>
+	</div>
+	<div  class="crear_cursos">
+                        <div title="CERRAR" class="cerrar"><i class="fas fa-times-circle"></i></div>
+                        <iframe class="crear_cursos2" scrolling="no" src="crear_cursos" >
+                        
+                    </iframe>
+                   
+     </div>
+     <script src="{{ url_for('static', filename='directivos/js/estudiantes.js') }}"></script>
+</body>
+</html>

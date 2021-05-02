@@ -7,7 +7,7 @@ app.config["DEBUG"]=True
 
 @app.route('/')
 def index():
-	return render_template('principal/index.html')
+	return render_template('principal/contacto.html')
 
 app.register_blueprint(inicio)
 

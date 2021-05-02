@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %} </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/menuD.css') }}">
+
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='directivos/img/bombillo.png') }}" sizes="32x32">
+</head>
+<body>
+	<!--Contenedor principal de todo lo que abarca el modulo-->
+	<main class="contendor_Principal ">
+		<div class="elmenu" style="width:5%;   ">
+			<div class="contenedor_menu uno" >
+		<!--menu pequeño-->
+				<div class="primeros" style="margin-top: 2%;  ">
+					<!--icono menu-->
+					<div title="Expandir" class="iconos_contraidos contenedor " style="cursor: pointer;  margin-left: 1.5%;" >
+							<i class="fas fa-bars"></i>
+					</div>
+					<h1 title="Inico" class="ade_dos">ADE</h1>
+					<!--icono bombillo-->
+					<div title="Claro/Oscuro" class="iconos_contraidos bombillo2" style="cursor: pointer;  margin-left: 1.5%;">
+							<i class="fas fa-lightbulb"></i>
+					</div>
+
+					<!--icono foto-->
+					<div style="margin-bottom: 20px;" title="Configuración Perfil">
+							<a href="perfil"><img class="fotoA " src="{{ url_for('static', filename='directivos/img/0.png') }}"></img></a>
+							
+					</div>
+					<div style="cursor: pointer; margin-left: 1%; " title="Crear">
+						<img class="iconos_contraidos crear_imagen hover2" src="{{ url_for('static', filename='directivos/img/51.png') }}" >
+					</div>
+					<!--icono revisar-->
+					<div style="cursor: pointer; margin-left: 1%; " title="Revisar">
+						<img  class="iconos_contraidos revisar_imagen hover" src="{{ url_for('static', filename='directivos/img/19.png') }}" >
+					</div>
+					<!--icono registrar-->
+					
+					<div style="cursor: pointer; margin-left: 1%; " title="Registrar">
+						<img class="iconos_contraidos registrar_imagen hover3" src="{{ url_for('static', filename='directivos/img/20.png') }}" >
+					</div>
+
+						
+					
+					
+
+					
+					<!--icono salir-->
+					<div title="Cerrar Sesión" class="iconos_contraidos contenedor " style="margin-top: 10%; margin-left: 1.5%; cursor: pointer;">
+						<i class="fas fa-sign-out-alt"></i>
+					</div>
+						
+				</div>
+
+		<!--menu grande-->
+				<div class="segundos" style="position: absolute; visibility: hidden; width: 23%; " >
+					
+					<div class="contenedor_encabezadoMenu">
+						<!--icono bombillo-->
+						<span title="Claro/Oscuro" class="bombillo" style="cursor: pointer;  "><i class="fas fa-lightbulb"></i></span>
+						<!--icono ade-->
+						<h1 title="Inico" class="ade" style="cursor: pointer;">ADE</h1>
+						<!--icono menu-->
+						<span title="Minimizar"  class=" contenedor2" style="cursor: pointer;   " ><i class="fas fa-bars" ></i></span>
+				
+				
+					</div>
+					<!--Foto-->
+					
+					<div class="contenedor_foto" title="Configuración Perfil">
+						<a href="perfil">
+							<img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}">
+						</a>
+						
+						
+					</div>
+					<!--Nombre y cargo usuario-->
+					<div class="datos_usuario">
+						<p class="nombre">Alonso Guevara</p>
+						<p class="cargo">Docente</p>
+					</div>
+					<!--botones-->
+					<div class="botones_menu">
+						
+						<div class="sombra_boton1">
+							<div class="botones boton1">
+							<img class="icon_botones" src="{{ url_for('static', filename='directivos/img/51.png') }}"  >
+							<p class="text_botones Crear" href="#">Creación</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="botones_menu">
+						
+						<div class="sombra_boton">
+							<div class="botones">
+							<img class="icon_botones" src="{{ url_for('static', filename='directivos/img/19.png') }}"  >
+							<p class="text_botones Revisar" href="#">Revisión</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="botones_menu">
+						
+						<div class="sombra_boton2 " >
+							<div class="botones boton2">
+							<img class="icon_botones" src="{{ url_for('static', filename='directivos/img/20.png') }}" >
+							<p class="text_botones Registro" href="#" >Registro</p>
+							
+							
+							</div>
+						</div>
+						
+		
+				</div>
+			
+			<!-- cerrar sesion-->
+					<div class="cerrar_sesion" >
+						<imput class="elemetos_cerrarSesion" style="cursor: pointer; " >
+							<p class="text_cerrarsesion">Cerrar Sesión</p>
+							<span><i class="fas fa-sign-out-alt"></i></span>
+						</imput>
+					</div>
+				</div>
+			
+				
+		</div>
+
+			
+		</div>
+			
+		<!--de aqui en adelante el resto del cogido de la pagina-->
+		<div class="contenido_modulo" style=" width: 95%; display: flex;align-items: center;justify-content: center; ">
+		<iframe  class="cambio" src="principal" scrolling="no" style= " border:none; width: 100%; height: 100% ; border-radius: 12px"></iframe>
+			
+		</div>
+		
+	</main>
+	
+	<script src="{{ url_for('static', filename='directivos/js/menuD.js') }}"></script>
+	<script src="{{ url_for('static', filename='directivos/js/jquery.js') }}"></script>
+</body>
+</html>

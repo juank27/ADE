@@ -1,0 +1,57 @@
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/estilo_listaDocentes.css') }}">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+    <link rel="icon"  type="image/png" href="{{ url_for('static', filename='directivos/img/bombillo.png') }}" sizes="32x32">
+    </head>
+
+    <body >
+        <main>
+            <div class="contenedor_1">
+                <div class="contenedor_2">
+                    <!--Contenedor de encabezado Titulo y buscador-->
+                    <div class="contenedorEncabezado">
+
+                        <!--Contenedor titulo de docentes-->
+                        <div class="contenedorTituloDocente">
+                            <h1>Asiganaturas</h1>
+                        </div>
+                      <!--Contenedor buscador-->
+                        <div class="contenedorBusqueda">
+                            <form class="formularioBuscador" action="">
+                                <input class="buscador" type="search" placeholder="Buscar">
+                                <div class="buscar"><i class="fas fa-search"></i></div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!--Contenedor de la lista de docentes-->
+                    <div class="contenedorLista">
+                        <table>
+                            <tr >
+                                <td><img src="{{ url_for('static', filename='directivos/img/52.png') }}"cellpadding ="150%"alt=""></td>
+                                <td>Sistemas-704 <br><a class="enlaces" href="estudiantes"><i class="fas fa-users"></i>estudiantes</a></td>
+                            </tr> 
+                            <tr>
+                                <td><img src="{{ url_for('static', filename='directivos/img/52.png') }}"cellpadding ="150%"alt=""></td>
+                                <td>Sistemas-703<br><a class="enlaces" href="estudiantes"><i class="fas fa-users"></i>estudiantes</a></a></td>
+                            </tr>   
+
+                            
+                              
+ 
+                        </table>
+                    </div>
+                    <!--Fin contenedor de la lista de docentes-->
+
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

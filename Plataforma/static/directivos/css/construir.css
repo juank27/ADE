@@ -1,0 +1,12 @@
+main{
+	border-radius: 12px;
+	width: 100%;
+	height: 98vh;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #F9AD30;
+}

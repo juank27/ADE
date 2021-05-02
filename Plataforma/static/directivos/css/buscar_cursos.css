@@ -1,0 +1,24 @@
+
+.buscador{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+
+}
+.buscador select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.buscador select::-ms-expand {
+    display: none;
+}
+.buscador select:hover{
+	background: red;
+}
+.buscador select{
+	width: 1000px;
+	font-size: 50px;
+}
+

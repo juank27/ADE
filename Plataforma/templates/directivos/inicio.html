@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/inicio.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/perfil.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='directivos/img/bombillo.png') }}" sizes="32x32">
+    </head>
+
+    <body>
+        
+            <div class="contenedor_1">
+                <div class="contenedor_2">
+                    
+                    <div class="contenedorImgAde">
+                        <img class="imgAde"  src= "{{ url_for('static', filename='directivos/img/adeColor.png') }}" alt="">
+                    </div>
+                    <div class="contenedorAvatar1">
+
+                        <div  class="contenedorImgAvatar">
+                            <img  class="avatar" src="{{ url_for('static', filename='directivos/img/0.png') }}" alt="">
+                        </div>
+
+                        <div class="contenedorGifAvatar">
+                            <img class="gifAvatar"  src="{{ url_for('static', filename='directivos/img/circulo.gif') }}" alt="">
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="gifImg">
+                        
+                        <div class="contenerdorNombreRector">
+                            <p class="nombreRector" ><strong>Alonso Guevara</strong></p>
+                        </div>
+                        
+                        <div class="contenedorCargo" style="cursor: pointer;"> <p class="cargo"><strong> Docente</strong></p>
+                        </div>
+                        <button   class="boton">Empezar!</button>
+                       
+                    </div>
+
+                </div>
+                <div class="enlace uno">
+                    
+                        
+                    <img  src="{{ url_for('static', filename='directivos/img/37.png') }}" alt="">
+                    <div class="bienvenida">
+                        <img width="40%" height="200"  src="{{ url_for('static', filename='directivos/img/arriba.gif') }}" style="margin-top:-40px" >
+                        <div style="margin-top: 20px ; margin-bottom:10%">
+                            <h1 style="font-family: 'Open Sans', sans-serif;">Te damos la bienvenida ha </h1>
+                            <img src= "{{ url_for('static', filename='directivos/img/adeColor.png') }}" alt="">
+                        </div>
+                        <p style="font-family: 'Open Sans', sans-serif;">Ya casi esta lista tu cuenta,<br> solo falta configura tu avatar y tus datos personales</p>
+                        <button class="boton2" href="perfil">
+                            <a href="perfil" style="text-decoration: none; color:#fff; font-size:30px;">Continuar</a></button>
+                        <img width="40%" height="100"  src="{{ url_for('static', filename='directivos/img/abajo.gif') }}" style="margin-top:100px" >
+                    </div>
+                    <img src="{{ url_for('static', filename='directivos/img/38.png') }}" alt="">
+
+                   <!--<iframe src="perfil" width="90%" height="90%" scrolling="no"></iframe>-->
+                </div>
+               
+
+        </main>
+    <script src="{{ url_for('static', filename='directivos/js/inicio.js') }}"></script>
+    <script src="{{ url_for('static', filename='directivos/js/jquery.js') }}"></script>
+            
+</html>
