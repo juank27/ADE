@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/crear_asignatura.css') }}">
+
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main class="contenedor">
+		<div class="arriba">
+				<input class="input" type="" name placeholder="Registre una asignatura">
+			
+		</div>
+		<div class="abajo">
+			
+			<div class="imagen">
+				<img id="f"	 width="200px" height="200px" src="{{ url_for('static', filename='directivos/img/52.png') }}">
+				<div class="elegir">
+					<div style="width: 100%; " class="cerrar" >
+						<i style="float: right; padding: 5px; color:#55ACEE; cursor: pointer;" class="fas fa-times-circle "></i>
+					</div>
+					<div class="elegir_dentro">
+						<div style="cursor: pointer;"><img class="elegir_logo" src="{{ url_for('static', filename='directivos/img/43.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/43.png') }}')"></div>
+						
+						<img style="cursor: pointer;" class="elegir_logo" src="{{ url_for('static', filename='directivos/img/44.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/44.png') }}')">
+
+
+					</div>
+					<div  class="elegir_dentro">
+						<div style="cursor: pointer;"><img class="elegir_logo" src="{{ url_for('static', filename='directivos/img/45.png') }}"onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/45.png') }}')"></div>
+						
+						<img style="cursor: pointer;" class="elegir_logo" src="{{ url_for('static', filename='directivos/img/46.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/46.png') }}')">
+						<br>	
+						
+						
+					</div>
+					<div style="cursor: pointer;"  >	<img class="elegir_logo"	 width="200px" height="200px" src="{{ url_for('static', filename='directivos/img/35.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/35.png') }}')"></div>
+						</div>
+				<div class="logo">
+					<h1 style="">Logo</h1>
+					<div class="Elegir_Logo">
+						<i  title="Elegir Logo" style="cursor: pointer;" class="fas fa-caret-down "></i>
+					</div>
+				</div>
+			</div>
+			<div class="botones">
+				<div class="aceptar">
+					<div class="dentro"><h1>Aceptar</h1></div>
+				</div>
+			
+			
+				<div class="cancelar">
+					<div class="dentro2"><h1>Cancelar</h1></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="resultado">
+				<div class="si">Asignatura Creada
+				<i class="fas fa-cloud-upload-alt"></i><br>
+				Su código es: {{nombre}}
+				</div>
+				<div class="no">No se creo ninguna asignatura
+				<i class="fas fa-exclamation-triangle"></i></div>
+
+				
+		</div>
+
+	</main>
+	
+	<script src="{{ url_for('static', filename='directivos/js/crear_asignatura.js') }}"></script>
+	<script src="{{ url_for('static', filename='directivos/js/jquery.js') }}"></script>
+
+
+</body>
+</html>	

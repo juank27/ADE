@@ -5,6 +5,7 @@ from flask_mysqldb import MySQL
 from flask_mail import Mail,Message
 from flask_mysqldb import MySQL
 from principal import inicio
+from docente import docente
 
 app = flask.Flask(__name__)
 app.config.from_object("config.DevelopmentConfig")
@@ -18,6 +19,7 @@ def index():
 	return render_template('principal/index.html')
 
 app.register_blueprint(inicio)
+app.register_blueprint(docente)
 
 if __name__ == '__main__':
 	app.run(debug = True)

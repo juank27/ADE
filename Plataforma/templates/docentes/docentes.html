@@ -1,0 +1,113 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/estiloDocentes.css') }}">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/242df0cab7.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='directivos/img/bombillo.png') }}" sizes="32x32">
+    </head>
+
+    <body>
+        <main>
+            <!--Contenedor pagina completa-->
+            <div class="contenedor_1">
+                <!--Contenedor de botones y titulos-->
+                <div class="contenedor_2">
+        <!--------------------------------------------------------------------------------------------->             
+                    <!--Contenedor de los dos botones de la parte superior-->
+                    <div class="contenedorArriba" >
+                        <!--Contenedor del titulo y boton de Crear asignaturas-->
+                        <div class="contenedorTituloBoton">
+                            <!--Contenedor anaranjado de sombra-->
+                            <div class="contenedorSombraNaranja">
+                                <!--Boton crear asignaturas-->
+                                <button class="boton">
+                                      <img src="{{ url_for('static', filename='directivos/img/31.png') }}" alt="">
+                                 </button> 
+                            </div>
+                            <!--Contenedor del titulo Crear asignaturas-->
+                            <div class="contenedorTitulo">
+                                <h1> Crear asignaturas</h1>
+                            </div>
+                        </div>
+                        <!--Fin del contenedor titulo boton Crear asignatura-->
+
+                        <!--Contenedor del titulo y boton de Listado de asignaturas-->
+                        <div class="contenedorTituloBoton">
+                            <!--Contenedor anaranjado de sombra-->
+                            <div class="contenedorSombraNaranja">
+                                <!--Boton Listado de asignaturas-->
+                                <button class="boton">
+                                    <img src="{{ url_for('static', filename='directivos/img/32.png') }}" alt="">
+                                </button> 
+                            </div>
+                            
+                            <!--Contenedor del titulo Crear asignaturas-->
+                            <div class="contenedorTitulo">
+                                <h1> Listado de <br>asignaturas</h1>
+                            </div>
+                        </div>
+                        <!--Fin del contenedor titulo boton Crear asignatura -->
+
+                    </div>
+                    <!--Fin del contenedor de los dos botones de la parte superior-->
+        <!--------------------------------------------------------------------------------------------->             
+                   
+        <!--Contenedor de los dos botones de la parte inferior-->
+                    <div class="contenedorAbajo">
+                         <!--Contenedor del titulo y boton de Listado de docentes-->
+                        <div class="contenedorTituloBoton">  
+                            <!--Contenedor anaranjado de sombra-->
+                            <div class="contenedorSombraNaranja">
+                                <!--Boton Listado de docentes-->
+                                <button class="boton">
+                                    <img src="{{ url_for('static', filename='directivos/img/33.png') }}" alt="">
+                                </button> 
+                            </div>
+                            <!--Contenedor titulo Listado de docentes-->
+                            <div class="contenedorTitulo">
+                                <h1> Listado de <br>Docentes</h1>
+                            </div>
+
+                        </div>
+                        <!--Fin contenedor del titulo y boton de Listado de docentes-->
+
+
+                        <!--Contenedor del titulo y boton de Numero de docentes-->
+                        <div class="contenedorTituloBoton">
+                            <!--Contenedor anaranjado de sombra-->
+                            <div class="contenedorSombraNaranja">
+                                <!--Boton Numero de docentes-->
+                                <button class="boton">
+                                    <img src="{{ url_for('static', filename='directivos/img/34.png') }}" alt="">
+                                </button> 
+                            </div>
+
+                            <!--Contenedor titulo Numero Docentes-->
+                            <div class="contenedorTitulo1">
+                                <h1> Numero de <br>Docentes</h1>
+                            </div>
+
+                        </div>
+
+                    </div>
+                 
+                    </div>
+                    <!--fin contenedor de botones y titulos-->
+                </div>
+                <div  class="docentes">
+                        <div title="CERRAR" class="cerrar"><i class="fas fa-times-circle"></i></div>
+                        <iframe class="docentes2" scrolling="no" src="crear_cursos" >
+                        
+                    </iframe>
+                 
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

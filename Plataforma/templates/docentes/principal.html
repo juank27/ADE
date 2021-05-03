@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='directivos/css/principal.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main class="oscuridad">
+
+             <!--Contenedor de video y recoratorios-->
+            <div class="contenedor_1">
+                <div class="contenedor_2">
+
+                     <!--Contenedor de video -->
+                    <div class="contenedorVideo">
+                        <div class="contenedorVideoSub1">
+                            <iframe width="98%" height="96%" style="border-radius: 12px;" src="https://www.youtube.com/embed/KYNnR8xGOKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!--fin contenedor de video -->
+
+                    <!--Contenedor de notas y titulo-->
+                    <div class="contenedorNotasTitulo">
+                        <!--Contenedor titulo-->
+                       <div class="contenedorTitulo">
+                           <!--Titulo-->
+                           <h1 class="tiulo"><strong>Recordatorios</strong></h1>
+                       </div>
+
+                        <!--Contenedor Recordatorios-->
+                       <div class="contenedorNotas1">
+
+                         <!--Recordatorios-->
+                            <form id="form" action="">
+                                <textarea style="background: #fff" name="" id="1" cols="30" rows="10" >
+                                </textarea>
+                                
+                            </form>
+                        
+
+                        <!--Contenedor de boton agregar y eliminar-->
+                        <div>
+                            <button id="btn" title="Nuevo" class="btn"><img src="{{ url_for('static', filename='directivos/img/29.png') }}" alt="x" /></button>
+                            <button id="btn2" title="Eliminar" class="btn2"><img src="{{ url_for('static', filename='directivos/img/28.png') }}" alt=""></button>
+                          
+                          <!--Script para hacer agregar y borrar recordatorios-->
+                            <script>
+                                $("#btn").addEventListener("click", crear, false);
+                               
+                                //Metodo crear recoratorio
+                                function crear(){
+                                    var textarea = document.createElement("textarea");
+                                    textarea.setAttribute("cols", "30");
+                                    textarea.setAttribute("rows", "10");
+    
+                                    $("#form").appendChild(textarea);
+                                }
+                                
+                                $("#btn2").addEventListener("click", eliminar, false);
+
+                                 //Metodo eliminar recordatorio
+                                function eliminar(){
+                                    var cont = document.getElementById("form");
+                                    var hijo = cont.lastChild;
+                                    cont.removeChild(hijo);
+                                }
+                                
+                                //metodo selector jquery
+                                function $(selector){
+                                    return document.querySelector(selector);
+                                }
+
+                            </script>
+                            <!--Fin del script-->
+                        </div>
+                        <!--Fin del contenedor botones-->
+                    </div>
+                    <!--Fin del contenedor notas y titulo-->
+
+                </div>
+            </div>
+            <!--Fin contenedor videos recordatorios-->
+        </main>
+        <script src="{{ url_for('static', filename='directivos/js/menuD.js') }}"></script>
+      
+    </body>
+</html>

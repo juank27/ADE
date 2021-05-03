@@ -1,9 +1,7 @@
-
-
-/*Función de recarga de la pagina*/
+/**Función de recarga de la pagina**/
 window.addEventListener('load',function(){
 
-    /*uso jquery*/
+    /**uso jquery**/
     $('#onload').fadeOut();
       $('body').removeClass('hidden');
 
@@ -14,7 +12,7 @@ window.addEventListener('scroll', function(){
     menus();
 });
 
-/************Funciones del menú de navegación***************************/
+/*****Funciones del menú de navegación**********/
 //variables
 let nav= document.getElementById('nav');
 let menu=document.getElementById('Enlaces');
@@ -32,7 +30,7 @@ function menus(){
         icon.style.transition = '1s';
    
     }if(Desplazamiento_Actual  > 800 ){
-    	nav.classList.remove('Contenedor-Menú');
+        nav.classList.remove('Contenedor-Menú');
         nav.className = ('Contenedor-Menú__Dos');
         icon.classList.remove('Contenedor-iconos__menú');
         icon.className = ('Contenedor-iconos__menúDos');   
@@ -41,7 +39,7 @@ function menus(){
 
 
     }if(Desplazamiento_Actual > 1400){
-    	nav.classList.remove('Contenedor-Menú__Dos');
+        nav.classList.remove('Contenedor-Menú__Dos');
         nav.className = ('Contenedor-Menú__3');
         icon.classList.remove('Contenedor-iconos__menúDos');
         icon.className = ('Contenedor-iconos__menúTres'); 
@@ -50,9 +48,9 @@ function menus(){
 
     }
  }
-/************Funciones del menú de navegación***************************/
+/*****Funciones del menú de navegación**********/
 
-/**********************buscador***********************/
+/*******buscador********/
 
 //Ejecutando funciones
 document.getElementById("ctn-icon-search").addEventListener("click", mostrar_buscador);
@@ -121,12 +119,11 @@ function buscador_interno(){
     }
 
 }
-/********************** fin buscador***********************/
+/******** fin buscador*********/
 
 //variables modal inicio de sesion
 
 let abrirSesion= document.querySelectorAll(".abrir-Sesion")[0];
-let abrirSesion2= document.querySelectorAll(".abrir-Sesion2")[0];
 let cerrarSesion= document.querySelectorAll(".cerrar-Sesion")[0];
 let modalSesion= document.querySelectorAll(".modal-container_Sesión")[0];
 let modalSesionDos= document.querySelectorAll(".modal-container_SesiónDos ")[0];
@@ -138,13 +135,12 @@ let modalUsuarioDos= document.querySelectorAll(".modal-container_UsuariosDos")[0
 let modalUsuario= document.querySelectorAll(".modal-container_Usuarios")[0];
 let cerrarUsuario= document.querySelectorAll(".cerrar-Usuario")[0];
 let abrirUsuario=document.querySelectorAll(".abrir-Usuario")[0];
+
 let abrirSesionLink= document.querySelectorAll(".linkSesion")[0];
 
 
 //variables modal de registro 
  
-//directivo
-
 //Estudiante
 let modalIntercambioE= document.querySelectorAll(".modal-container_intercambioEstudiantes")[0];
 let modalIntercambioEDos= document.querySelectorAll(".modal-container_intercambioDosEstudiantes")[0];
@@ -160,20 +156,14 @@ let abrirSesionLinkDD= document.querySelectorAll(".linkSesionDD")[0];
 
 
 
-/*Modal inicio de sesion*/
-abrirSesion.addEventListener("click",function(e){
-    e.preventDefault();
+/**Modal inicio de sesion**/
+abrirSesion.addEventListener("click",function(){
+  
     modalSesion.style.opacity="1";
     modalSesion.style.visibility="visible";
     modalSesionDos.classList.toggle("modal-container_cerrarS")
 })
-/*Modal inicio de sesion*/
-abrirSesion2.addEventListener("click",function(e){
-    e.preventDefault();
-    modalSesion.style.opacity="1";
-    modalSesion.style.visibility="visible";
-    modalSesionDos.classList.toggle("modal-container_cerrarS")
-})
+
 
 cerrarSesion.addEventListener("click",function(){
     modalSesionDos.classList.toggle("modal-container_cerrarS");
@@ -188,7 +178,7 @@ cerrarSesion.addEventListener("click",function(){
     },900)
 })
 
-abrirRegistroLink.addEventListener("click",function(e){
+abrirRegistroLink.addEventListener("click",function(){
 
 
     modalSesionDos.classList.toggle("modal-container_cerrarS");
@@ -202,7 +192,7 @@ abrirRegistroLink.addEventListener("click",function(e){
 
     },900)
 
-    e.preventDefault();
+    
     modalUsuario.style.opacity="1";
     modalUsuario.style.visibility="visible";
     modalUsuarioDos.classList.toggle("modal-container_cerrarU")
@@ -210,14 +200,15 @@ abrirRegistroLink.addEventListener("click",function(e){
 
 ///////////////////////////////////////////////////////////////////////////
 
-/*modal eleccion usuario para el registro*/
+/**modal eleccion usuario para el registro**/
 
-abrirUsuario.addEventListener("click",function(e){
-    e.preventDefault();
+abrirUsuario.addEventListener("click",function(){
+
     modalUsuario.style.opacity="1";
     modalUsuario.style.visibility="visible";
     modalUsuarioDos.classList.toggle("modal-container_cerrarU")
 })
+
 
 cerrarUsuario.addEventListener("click",function(){
     modalUsuarioDos.classList.toggle("modal-container_cerrarU");
@@ -231,7 +222,7 @@ cerrarUsuario.addEventListener("click",function(){
     },900)
 })
 
-abrirSesionLink.addEventListener("click",function(e){
+abrirSesionLink.addEventListener("click",function(){
 
     modalUsuarioDos.classList.toggle("modal-container_cerrarU");
     
@@ -243,7 +234,7 @@ abrirSesionLink.addEventListener("click",function(e){
 
     },900)
 
-    e.preventDefault();
+    
     modalSesion.style.opacity="1";
     modalSesion.style.visibility="visible";
     modalSesionDos.classList.toggle("modal-container_cerrarS")
@@ -251,13 +242,12 @@ abrirSesionLink.addEventListener("click",function(e){
 })
 //////////////////////////////////////////////////////////////////////
 
-/*modal registro*/
+/**modal registro**/
 
 
-
-/*Docentes*/
-intercambioDos.addEventListener("click",function(e){
-   e.preventDefault();
+/**Docentes**/
+intercambioDos.addEventListener("click",function(){
+   
     modalIntercambioDD.style.opacity="1";
     modalIntercambioDD.style.visibility="visible";
     modalIntercambioDDDos.classList.toggle("modal-container_cerrarIDD")
@@ -276,7 +266,7 @@ cerrarIntercambioDD.addEventListener("click",function(){
 
     },900)
 })
-abrirSesionLinkDD.addEventListener("click",function(e){
+abrirSesionLinkDD.addEventListener("click",function(){
 
     modalUsuarioDos.classList.toggle("modal-container_cerrarU");
     modalIntercambioDDDos.classList.toggle("modal-container_cerrarIDD");
@@ -290,7 +280,6 @@ abrirSesionLinkDD.addEventListener("click",function(e){
 
     },900)
 
-    e.preventDefault();
     modalSesion.style.opacity="1";
     modalSesion.style.visibility="visible";
     modalSesionDos.classList.toggle("modal-container_cerrarS")
@@ -298,9 +287,9 @@ abrirSesionLinkDD.addEventListener("click",function(e){
 })
 
 
-/*Estudiantes*/
-intercambioTres.addEventListener("click",function(e){
-    e.preventDefault();
+/**Estudiantes**/
+intercambioTres.addEventListener("click",function(){
+    
     modalIntercambioE.style.opacity="1";
     modalIntercambioE.style.visibility="visible";
     modalIntercambioEDos.classList.toggle("modal-container_cerrarIE")
@@ -318,7 +307,7 @@ cerrarIntercambioE.addEventListener("click",function(){
     },900)
 })
 
-abrirSesionLinkE.addEventListener("click",function(e){
+abrirSesionLinkE.addEventListener("click",function(){
 
     modalUsuarioDos.classList.toggle("modal-container_cerrarU");
     modalIntercambioEDos.classList.toggle("modal-container_cerrarIE");
@@ -332,7 +321,6 @@ abrirSesionLinkE.addEventListener("click",function(e){
 
     },900)
 
-    e.preventDefault();
     modalSesion.style.opacity="1";
     modalSesion.style.visibility="visible";
     modalSesionDos.classList.toggle("modal-container_cerrarS")

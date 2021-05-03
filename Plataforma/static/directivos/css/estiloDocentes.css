@@ -1,0 +1,136 @@
+body{
+  
+    text-align: center;
+    border-radius: 100px;
+    height: 98vh;
+    display: flex;
+
+}
+.docentes{
+    opacity: 0;
+   overflow: : hidden;
+    position: fixed;
+    justify-content: center;
+  width: 0;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+    transition:all 2s ease;
+    color:#55ACEE;
+
+}
+.docentes2{
+  
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  border:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.cerrar{
+    margin-top:2%;
+    width: 50%;
+    text-align: right;
+    cursor: pointer;
+}
+.contenedor_1{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_2{
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.contenedorArriba{ 
+    margin:0 auto;
+    height: 50%;
+    width: 100%;
+    display: inline-flex;
+}
+
+.contenedorTituloBoton{
+    color: #069CCC;
+    width: 50%;
+    height: 100%;   
+}
+
+.contenedorSombraNaranja{
+    height: 70%;
+    width: 70%;
+    background-color:#FDAD30;
+    border-radius: 4%;
+    margin-left: 15%;
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-bottom: 7%; 
+}
+
+.boton{
+    margin-left: -3%;
+    margin-top: -2%;
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+    border-left:solid 2px #FDAD30;
+    border-top: solid 2px #FDAD30;
+    border-right: solid 1px #FDAD30;
+    border-bottom: solid 1px #FDAD30;
+    background-color: #FFE680;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f7eab3; 
+  }
+
+button:focus{
+    outline: none;
+}
+
+img{
+    height: 80%;
+    width: 80%;
+    border-radius: 4%;
+}
+
+.contenedorTitulo1{
+    color: #069CCC;
+}
+
+
+
+
+.contenedorAbajo{
+    display: inline-flex;
+    margin-top: 1%;
+    height: 50%;
+    width: 100%;
+      
+}
+
+.botonTituloListaDocentes{
+    width: 300px;
+}
+h1{
+
+    font-size: 20px;
+}
