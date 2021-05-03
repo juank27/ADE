@@ -19,48 +19,6 @@
 		<!--Contenedor principal-->
 		<div class="contenedor_principalContacto">	
 
-			<!-------------Formulario contacto de inscripciones-------------------->
-			 <!--Contenedor naranja-->
-			 <div class="contenedor_naranjaContactos">
-			 	<!--Contenedor formulario-->
-			 	<div class="contenedor_formularioContactos">
-			 		<!--Formulario-->
-					<form action="/enviarInscripciones" class="formularioContactos" method="POST">
-						<fieldset class="C_datosContacto"><!--Caja Contenedor datos contactos-->
-							<p class="tituloF_Contactos">
-								<strong>CONTACTO DE INSCRIPCIONES</strong>
-							</p>
-							<p class="subtituloF_C">Llena los siguientes datos y ponte en
-							contacto con nosotros</p>
-							<input type="text" placeholder="Nombre del rector"   name="nameRector">
-							<input type="text" placeholder="Correo electronico"  name="email">
-							<input type="text" placeholder="Numero telefonico"  name="telefono">
-							<input type="text" placeholder="Nombre de la institución"  name="nameInstitucion">
-							<input type="text" placeholder="Código DANE"  name="codDane">
-							<input type="text" placeholder="Departamento"  name="departamento">
-							<input type="text" placeholder="Numero de usuarios"  name="numUsuarios">
-							<input type="text" placeholder="Comentarios adicionales"  name="comentarios">
-							<div class="contenedor_boton_enviar">
-								<input type="submit" class="boton_FI" placeholder="Enviar">	
-							</div>
-						</fieldset>
-						<!--captura mensajes del servidor -->
-						{% with messages = get_flashed_messages() %} 
-						{% if messages %}
-						{%for mesage in messages %}
-							<p class="tituloF_Contactos">{{ mesage }}</p>
-						{% endfor %}
-						{% endif %}
-						{% endwith %}
-					</form>
-					<!--Fin formulario-->
-				</div>
-				<!--Fin contenedor formulario-->
-			 </div>
-			 <!--Fin contenedor naranja-->
-
-		<!-------------Fin formulario contacto de inscripciones-------------------->
-
 
 		<!-------------Inicio contenedor de imagen---------->
 			 <div class="contenedor_imgContacto">
