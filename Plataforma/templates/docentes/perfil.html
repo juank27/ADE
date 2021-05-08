@@ -46,21 +46,22 @@
                               
                                 <form class="formulario" action="">
                                     <label class="nombre" for="">Nombre: </label>
-                                    <input class="cajaNombre" type="text">
+                                    <input class="cajaNombre" type="text" value="{{data.0}}">
+                                    <br>
+                                    <label class="apellido" for="">Apellido: </label>
+                                    <input class="cajaApellido" type="text" value="{{data.1}}">
                                     <br>
                                     <label class="cargo" for="">Cargo: </label>
-                                    <input class="cajaCargo" type="text">
+                                    <input class="cajaCargo" type="text" value="Docente" disabled="">
                                     <br>
                                     <label class="id" for="">Id: </label>
-                                    <input class="cajaId" type="text">
+                                    <input class="cajaId" type="text" value="{{data.2}}">
                                     <br>
                                     <label class="correo" for="">Correo: </label>
-                                    <input class="cajaCorreo" type="text">
+                                    <input class="cajaCorreo" type="text" value="{{data.3}}">
                                     <br>
                                     <label class="contrasena" for="">Contraseña: </label>
-                                    <input class="cajaContrasna" type="password">
-                                    
-
+                                    <input class="cajaContrasna" type="password" value="{{data.4}}">
                                 </form>
                             </div>
                         </div> 
@@ -72,19 +73,21 @@
                         </div>
                        
                         <div class="contenedorBoton">
-                            <button class="boton"> <strong>Guardar</strong></button>
+                            <a class="contenedorMenu" href="menu" title="menú">
+                                <button class="boton" href="menu"> <strong>Guardar</strong></button>
+                            </a>
                         </div>
                            
                         <div  title="Guardar" class="contenedorGifSol" style="cursor: pointer;">
-                            <img class="gifSol" src="{{ url_for('static', filename='directivos/img/sol.gif') }}" alt="">
+                            <a class="contenedorMenu" href="menu" title="menú">
+                                <img class="gifSol" src="{{ url_for('static', filename='directivos/img/sol.gif') }}" alt="">
+                            </a>
                         </div>
                     </div>
                    
                 </div>
             </div>
-
         </main>
-      
         <script src="{{ url_for('static', filename='directivos/js/custom.js') }}"></script>
         <script src="{{ url_for('static', filename='directivos/js/barba.min.js') }}"></script>
     </body>

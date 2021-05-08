@@ -1,5 +1,6 @@
 import flask
-from flask import render_template
+from flask import render_template,request,flash
+from flask_mysqldb import MySQL
 
 inicio= flask.Blueprint('inicio', __name__)
 
@@ -25,4 +26,3 @@ def herramientas():
 @inicio.route('/jquery')
 def jquery():
 	return render_template('jquery-3.1.1.min.js')
-

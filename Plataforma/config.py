@@ -6,7 +6,7 @@ class DevelopmentConfig(Config):
 	MYSQL_HOST =	'127.0.0.1'
 	MYSQL_USER =	'root'
 	MYSQL_PASSWORD =	''
-	MYSQL_DB = 'prueba'
+	MYSQL_DB = 'plataforma'
 	#Config Mail
 	MAIL_SERVER = 'smtp.gmail.com'
 	MAIL_PORT = 465

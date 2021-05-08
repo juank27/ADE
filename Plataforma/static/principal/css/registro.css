@@ -295,7 +295,7 @@
 	align-items: center;
 }
 
-.datos input[type=text], input[type=password] {
+.datos input[type=text], input[type=password], input[type=email] {
 	font-family: 'Open Sans', sans-serif; 
 	font-size: 15px;
 	padding: 5px 5px;
@@ -337,7 +337,7 @@
 	margin-top: 20px;
 	 margin-bottom: 5px;
 }
-.boton_registro{/*Boton*/
+#boton_registro{/*Boton*/
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     background-color: #0499D8;

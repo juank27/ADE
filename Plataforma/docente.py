@@ -1,21 +1,38 @@
 import flask
 from flask import render_template
+from flask import session
+
+
+
 docente = flask.Blueprint('docente', __name__)
 
-@docente.route('/inicioDocente')
-def index():
-	return render_template('docentes/inicio.html')
-
+def dataSession():
+	#traigo la info de la session
+	if 'info' in session:
+		info = session['info']
+		print(info)
+	return info
+	
 @docente.route('/perfil')
 def perfil():
-	return render_template('docentes/perfil.html')
-@docente.route('/foto')
-def foto():
-	return render_template('docentes/foto.html')
+	info = dataSession()
+	return render_template('docentes/perfil.html', data=info)
+
+
 
 @docente.route('/menu')
 def menu():
-	return render_template('docentes/menuD.html')
+	#traigo la info de la session
+	if 'info' in session:
+		infa = session['info']
+	else:
+		return render_template('principal/index.html')
+	info = dataSession()
+	name = info[0]
+	apellido = info[1]
+	datos = [name, apellido]
+	return render_template('docentes/menuD.html', data=datos)
+
 @docente.route('/cursos')
 def cursos():
 	return render_template('docentes/cursos.html')

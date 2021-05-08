@@ -143,7 +143,7 @@
 				<!--Contenedor principal-->
 			<div class="contenedor-principal__Sesion">	
 				<!--Formulario-->
-				<form class="formularioSesion">
+				<form action="/login" method="POST" class="formularioSesion">
 					<!--Titulo principal-->
 					<p class="tituloSesion"><strong>Iniciar</strong></p>
 					<!--Subtitulos-->
@@ -152,12 +152,14 @@
 				        <p class="SubtituloDos-Sesion"><strong>ADE</strong></p>
 				    </p>
 				    <!--datos de ingresar-->
-				    <input class="Ingresar-Usuario" type="text" placeholder="Correo Electronico" name="">
-				    <input type="password" placeholder="Contraseña" name="">
+				    <input class="Ingresar-Usuario" type="email" placeholder="Correo Electronico" name="email" required id ="">
+				    <input type="password" placeholder="Contraseña" name="password" required id ="" minlength="8">
 
 				    <!--Bonton continuar-->
 				        
-				    <div class="caja-boton" ><a class="boton_sesion" href="error404.html" >continuar</a></div>
+				    <div class="caja-boton" >
+				    	<input type="submit" class="boton_sesion" placeholder="Continuar">
+				    </div>
 
 				    <!--texto opcion de registro-->
 				  	<p class="Pregunta-Registro">¿No tienes una cuenta?<a href="#" class="linkRegistro">registrate</a></p>
@@ -275,12 +277,12 @@
 				    <div class="datos">
 				    	<div class="form_d"><!--Contenedor de datos -->
 				    		<div class="div_datos"><!--Division de cada uno de los datos-->
-				    		<input type="text" placeholder="Correo Electronico"  >
-				    		<input type="text" placeholder="Nombre Completo" >
+				    		<input type="text" placeholder="Nombres" >
+				    		<input type="text" placeholder="Apellidos" >
 				    	</div>
 				    	<div class="div_datos">
 				    		<input type="text" placeholder="Num Identificacion" >
-				    		<input type="text" placeholder="Codigo Institucional" >
+				    		<input type="text" placeholder="Correo Electronico"  >
 				    	</div>
 				    	<div class="div_datos">
 				    		<input type="password" placeholder="Contraseña" class="entradaDos">
@@ -326,7 +328,7 @@
 			<div class="contenedor_prinRegistro">
 
 				<!--Formulario de registro -->
-				<form class="formularioRegistro">
+				<form action="/registroDocente" method="POST" class="formularioRegistro">
 
 					<!--Contendor de los titulos del formulario  -->
 					<div class="txt_registro " >
@@ -343,16 +345,16 @@
 				    <div class="datos">
 				    	<div class="form_d"><!--Contenedor de datos -->
 				    		<div class="div_datos"><!--Division de cada uno de los datos-->
-				    		<input type="text" placeholder="Correo Electronico"  >
-				    		<input type="text" placeholder="Nombre Completo" >
+				    		<input type="text" placeholder="Nombres" name="nombres" required id ="">
+				    		<input type="text" placeholder="Apellidos" name="apellido" required id ="">
 				    	</div>
 				    	<div class="div_datos">
-				    		<input type="text" placeholder="Num Identificacion" >
-				    		<input type="text" placeholder="Codigo Institucional">
+				    		<input type="text" placeholder="Num Identificacion" name="id" required id ="" minlength="10">
+				    		<input type="email" placeholder="Correo Electronico" name="email"  required id ="">
 				    	</div>
 				    	<div class="div_datos">
-				    		<input type="password" placeholder="Contraseña" class="entradaDos">
-				    		<input type="password" placeholder="Verif contraseña" class="entrada">
+				    		<input type="password" placeholder="Contraseña" class="entradaDos" name="contrasena" required id ="" minlength="8">
+				    		<input type="password" placeholder="Verif contraseña" class="entrada" name="verifcontrasena" required id ="" minlength="8">
 				    	</div>
 				    	</div>
 				    	<!--Imagen ubicada al lado derecho del formulario --->
@@ -363,18 +365,21 @@
 				    <!--Pate final del formulario de registro-->
 				    <div class="Final_Registro">
 				       <div class="bt_regis"><!--division boton continuar-->
-				       	 <a href="error404.html" class="boton_registro">continuar</a><!--Boton-->
+				       	 <input type="submit" class="" id="boton_registro" placeholder="Continuar">
 				       </div>
 				         <!--Pregunta si ya tiene cuenta-->
-				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionDD">Inisiar Sesión</a></p>
+				     	 <p class="txt_YaCuenta">¿Ya tiene una cuenta?<a href="" class="linkSesionDD">Iniciar Sesión</a></p>
 				    </div>
-
-
+				    <!--captura mensajes del servidor -->
+						{% with messages = get_flashed_messages() %} 
+						{% if messages %}
+						{%for mesage in messages %}
+							<p class="tituloF_Contactos">{{ mesage }}</p>
+						{% endfor %}
+						{% endif %}
+						{% endwith %}
 				</form>
-
-				
-			</div>
-						
+			</div>			
 		</div>
 	</div>
 
@@ -444,6 +449,7 @@
 	<script src="{{ url_for('static', filename='principal/js/jquery.js') }}"></script>
 	
 	<script src="{{ url_for('static', filename='principal/js/inicio.js') }}"></script>
+	<script src="{{ url_for('static', filename='principal/js/ruta.js') }}"></script>
 
 
 

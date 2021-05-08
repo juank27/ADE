@@ -54,7 +54,7 @@
 
 					
 					<!--icono salir-->
-					<div title="Cerrar Sesión" class="iconos_contraidos contenedor " style="margin-top: 10%; margin-left: 1.5%; cursor: pointer;">
+					<div title="Cerrar Sesión" class="iconos_contraidos contenedor " style="margin-top: 10%; margin-left: 1.5%; cursor: pointer;" href="/logout">
 						<i class="fas fa-sign-out-alt"></i>
 					</div>
 						
@@ -84,7 +84,7 @@
 					</div>
 					<!--Nombre y cargo usuario-->
 					<div class="datos_usuario">
-						<p class="nombre">Alonso Guevara</p>
+						<p class="nombre">{{data.0}} {{data.1}}</p>
 						<p class="cargo">Docente</p>
 					</div>
 					<!--botones-->
@@ -123,11 +123,14 @@
 				</div>
 			
 			<!-- cerrar sesion-->
-					<div class="cerrar_sesion" >
-						<imput class="elemetos_cerrarSesion" style="cursor: pointer; " >
-							<p class="text_cerrarsesion">Cerrar Sesión</p>
-							<span><i class="fas fa-sign-out-alt"></i></span>
-						</imput>
+					<div class="cerrar_sesion" href="/logout">
+						<form action="/logout" method="POST">
+							<imput class="elemetos_cerrarSesion" style="cursor: pointer; " href="/logout">
+								<!--<p class="text_cerrarsesion">Cerrar Sesión</p>-->
+								<input type="submit" name="" placeholder="Cerrar sesion" class="text_cerrarsesion">
+								<span><i class="fas fa-sign-out-alt"></i></span>
+							</imput>
+						</form>
 					</div>
 				</div>
 			

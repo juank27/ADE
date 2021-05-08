@@ -10,66 +10,68 @@
          
         <main>
             <div class="contenedor_P">
+                <!--Contenedor general-->
                 <div class="contenedor_p2">
-                    <div class="encabezadoP">
-                        <div class="contenedorImgPrincipal">
-                            <img  id="f" class="imgPrincial" src="{{ url_for('static', filename='directivos/img/0.png') }}" alt="">
-                          </div>
-      
-                          <div class="contenedorTitulo">
-                              
-                                <div class="bombillo" style="cursor: pointer;display: flex; align-items: center;  "><i class="fas fa-lightbulb"></i></div>
-                              
-                              
-                                <p class="titulo"><Strong>ADE-PERFIL</Strong></p>
-                              
-                          </div>
-      
-                          <a class="contenedorMenu" href="perfil">
-                            <div class="menu" style="cursor: pointer; " ><i class="fas fa-window-close"></i></div>
-                          </a>
-                    </div>
-                    <br>
-                    <div class="contenedorAvatar">
-                        <img src="{{ url_for('static', filename='directivos/img/1.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/1.png') }}')"alt="">
+                    <form>
+                        <div class="encabezadoP">
+                            <div class="contenedorImgPrincipal">
+                                <img  id="f" class="imgPrincial" src="{{ url_for('static', filename=avatar)}}" alt="">
+                              </div>
+          
+                              <div class="contenedorTitulo">
+                                  
+                                    <div class="bombillo" style="cursor: pointer;display: flex; align-items: center;  "><i class="fas fa-lightbulb"></i></div>
+                                  
+                                  
+                                    <p class="titulo"><Strong>ADE-PERFIL</Strong></p>
+                                  
+                              </div>
+          
+                              <a class="contenedorMenu" href="perfil">
+                                <div class="menu" style="cursor: pointer; " ><i class="fas fa-window-close"></i></div>
+                              </a>
+                        </div>
+                        <br>
+                        <div class="contenedorAvatar">
+                            <img src="{{ url_for('static', filename='directivos/img/1.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/1.png') }}')"alt="">
 
-                        <img src="{{ url_for('static', filename='directivos/img/18.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/18.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/4.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/4.png') }}')"  alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/5.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/5.png') }}')" alt="">
-                        <br>
-                       <img src="{{ url_for('static', filename='directivos/img/6.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/6.png') }}')" alt="">
-                    
-                        <img src="{{ url_for('static', filename='directivos/img/7.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/7.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/8.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/8.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/9.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/9.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/10.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/10.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/18.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/18.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/4.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/4.png') }}')"  alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/5.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/5.png') }}')" alt="">
+                            <br>
+                           <img src="{{ url_for('static', filename='directivos/img/6.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/6.png') }}')" alt="">
                         
-                        <img src="{{ url_for('static', filename='directivos/img/11.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/11.png') }}')" alt="">
-                        <br>
-                        <img src="{{ url_for('static', filename='directivos/img/12.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/12.png') }}')" alt="">
-                        
-                        <img src="{{ url_for('static', filename='directivos/img/13.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/13.png') }}')" alt="">
-                        
-                        <img src="{{ url_for('static', filename='directivos/img/14.png') }}"onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/14.png') }}')" alt="">
-                         <img src="{{ url_for('static', filename='directivos/img/15.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/15.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/16.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/16.png') }}')" alt="">
-                        <img src="{{ url_for('static', filename='directivos/img/17.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/17.png') }}')" alt="">
-                        
-                    </div>
-                    <div class="contenedorPiePagina">
-                        <div class="contenedorGifNube">
-                            <img class="gifNube" src="{{ url_for('static', filename='directivos/img/nube.gif') }}" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/7.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/7.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/8.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/8.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/9.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/9.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/10.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/10.png') }}')" alt="">
+                            
+                            <img src="{{ url_for('static', filename='directivos/img/11.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/11.png') }}')" alt="">
+                            <br>
+                            <img src="{{ url_for('static', filename='directivos/img/12.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/12.png') }}')" alt="">
+                            
+                            <img src="{{ url_for('static', filename='directivos/img/13.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/13.png') }}')" alt="">
+                            
+                            <img src="{{ url_for('static', filename='directivos/img/14.png') }}"onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/14.png') }}')" alt="">
+                             <img src="{{ url_for('static', filename='directivos/img/15.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/15.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/16.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/16.png') }}')" alt="">
+                            <img src="{{ url_for('static', filename='directivos/img/17.png') }}" onclick="cambiarImagenJS('{{ url_for('static', filename='directivos/img/17.png') }}')" alt="">
+                            
                         </div>
-                       
-                        <div class="contenedorBoton">
-                            <button class="boton" onclick="location.href='perfil'"> <strong>Guardar</strong></button>
-                        </div>
+                        <div class="contenedorPiePagina">
+                            <div class="contenedorGifNube">
+                                <img class="gifNube" src="{{ url_for('static', filename='directivos/img/nube.gif') }}" alt="">
+                            </div>
                            
-                        <div class="contenedorGifSol">
-                            <img class="gifSol" src="{{ url_for('static', filename='directivos/img/sol.gif') }}" alt="">
+                            <div class="contenedorBoton">
+                                <button class="boton" onclick="location.href='perfil'"> <strong>Guardar</strong></button>
+                            </div>
+                               
+                            <div class="contenedorGifSol">
+                                <img class="gifSol" src="{{ url_for('static', filename='directivos/img/sol.gif') }}" alt="">
+                            </div>
                         </div>
-                    </div>
-                   
+                    </form>
                 </div>
             </div>
 
