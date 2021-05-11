@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar Sesión</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='principal/css/sesion.css') }}">
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='principal/img/bombillo.png') }}" sizes="32x32">
+</head>
+<body>
+	<!-- ----------------modal inicio de sesion---------------------------- -->
+	<!--De aqui en adelante los estilos se encuentran el css sesion-->
+	<div class="modal-container_Sesion2"><!--Contenedor de transparencia negra-->
+		<div class="modal-container_SesiónDos modal-container_cerrarS2"><!--Contenedor  central blanco-->
+			<span class="cerrar-Sesion"> <i class="fas fa-times"></i></span><!--icono de la x-->
+			
+			<img  src="{{ url_for('static', filename='principal/img/logo.png') }}" class="logoSesion"><!--Logo ADE-->
+				<!--Contenedor principal-->
+			<div class="contenedor-principal__Sesion">	
+				<!--Formulario-->
+				<form action="/login" method="POST" class="formularioSesion">
+					<!--Titulo principal-->
+					<p class="tituloSesion"><strong>Iniciar</strong></p>
+					<!--Subtitulos-->
+				    <p class="SubtituloSesion">
+				        Inicia sesión para continuar en <br />
+				        <p class="SubtituloDos-Sesion"><strong>ADE</strong></p>
+				    </p>
+				    <!--datos de ingresar-->
+				    <input class="Ingresar-Usuario" type="email" placeholder="Correo Electronico" name="email" required id ="">
+				    <input type="password" placeholder="Contraseña" name="password" required id ="" minlength="8">
+
+				    <!--Bonton continuar-->
+				        
+				    <div class="caja-boton" >
+				    	<input type="submit" class="boton_sesion" placeholder="Continuar">
+				    </div>
+
+				    <!--texto opcion de registro-->
+				  	<p class="Pregunta-Registro">¿No tienes una cuenta?<a href="#" class="linkRegistro">registrate</a></p>
+					<!--captura mensajes del servidor -->
+						{% with messages = get_flashed_messages() %} 
+						{% if messages %}
+						{%for mesage in messages %}
+							<p class="tituloF">{{ mesage }}</p>
+						{% endfor %}
+						{% endif %}
+						{% endwith %}
+						
+				    <!--imagenes del formulario -->
+				    <div class="imgSesionIzq" style="text-align: left;">
+				    	<img class="" src="{{ url_for('static', filename='principal/img/26.png') }}" alt="" width="230">
+				    </div>
+				    <div class="imgSesionDer" style="text-align: left;">
+				    	<img  class="" src="{{ url_for('static', filename='principal/img/27.png') }}" alt="" width="100"
+				    	height="180">
+				    </div>
+				</form>
+				<!--Fin formulario-->
+			</div>
+			<!--Fin contenedor principal-->				
+		</div>
+	</div>
+	<!--Fin modal inicio de sesión -->
+</body>
+</html>

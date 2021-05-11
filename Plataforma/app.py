@@ -67,7 +67,7 @@ def login():
 			return redirect(url_for('docente.menu'))
 		else :
 			flash('Datos Incorrectos')
-	return render_template('principal/menu.html')
+	return redirect(url_for('inicio.inicioSesion'))
 
 # -------- Registro Docente -------
 @app.route('/registroDocente', methods=['GET', 'POST'])
@@ -98,26 +98,30 @@ def registroDocente():
 									(nombre,apellido,email,idnum,password,'directivos/img/4.png'))
 				mysql.connection.commit()
 				cur.close()
+				print(registro)
 				#creo la session
 				session['info'] = registro
-				flash('Datos registrados Exitosamente')
+				if 'info' in session:
+					info = session['info']
+					print('session')
+					print(info)
 				return redirect(url_for('indexDocente'))
+				flash('Datos registrados Exitosamente')
 			else:
 				flash('Verifique la contraseña')
 		else:
 			flash('Datos ya registrados')
 
-	return render_template('principal/menu.html')
+	return redirect(url_for('inicio.registroDocente'))
 
 # ------- Docente ------
-@app.route('/registroDocente')
+@app.route('/indexDocente')
 def indexDocente():
 	#traigo la info de la session
 	if 'info' in session:
 		info = session['info']
 		print(info)
-	else:
-		return redirect(url_for('index'))
+	print('registro !!!!!')
 	return render_template('docentes/inicio.html', data=info)
 
 @app.route('/foto')

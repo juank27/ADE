@@ -23,6 +23,12 @@ def soporte():
 @inicio.route('/herramientas')
 def herramientas():
 	return render_template('principal/herramientas.html')
+@inicio.route('/registroDocente')
+def registroDocente():
+	return render_template('principal/registroDocente.html')
+@inicio.route('/inicioSesion')
+def inicioSesion():
+	return render_template('principal/inicioSesion.html')
 @inicio.route('/jquery')
 def jquery():
 	return render_template('jquery-3.1.1.min.js')

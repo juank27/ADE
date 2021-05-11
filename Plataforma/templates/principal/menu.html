@@ -163,7 +163,15 @@
 
 				    <!--texto opcion de registro-->
 				  	<p class="Pregunta-Registro">¿No tienes una cuenta?<a href="#" class="linkRegistro">registrate</a></p>
-
+					<!--captura mensajes del servidor -->
+						{% with messages = get_flashed_messages() %} 
+						{% if messages %}
+						{%for mesage in messages %}
+							<p class="tituloF_Contactos">{{ mesage }}</p>
+						{% endfor %}
+						{% endif %}
+						{% endwith %}
+						
 				    <!--imagenes del formulario -->
 				    <div class="imgSesionIzq" style="text-align: left;">
 				    	<img class="" src="{{ url_for('static', filename='principal/img/26.png') }}" alt="" width="230">
@@ -334,7 +342,7 @@
 					<div class="txt_registro " >
 						<p class="tituloRegistrar"><strong>Registrar</strong></p>
 						<p class="subtituloRegistrar">
-					        Registrate para ingresar a &nbsp;<strong>ADE</strong>
+					        Registrate para ingresar a <strong>ADE</strong>
 					    </p>
 					
 					</div>		

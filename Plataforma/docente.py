@@ -44,7 +44,7 @@ def crear_cursos():
 	return render_template('docentes/crear_cursos.html')
 @docente.route('/crear_asignaturas')
 def crear_asignaturas():
-	name = 'juan Ruiz'
+	name = '111235'
 	return render_template('docentes/crear_asignatura.html', nombre = name)
 @docente.route('/listaDocentes')
 def listaDocentes():
@@ -68,4 +68,5 @@ def crear():
 @docente.route('/construcion')
 def construcion():
 	return render_template('docentes/construccion.html')
+
 
