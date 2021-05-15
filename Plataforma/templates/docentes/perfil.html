@@ -45,7 +45,7 @@
                             <div class="contenedorFormulario2">
                               
                                 <form class="formulario" action="/editPerfil" method="POST">
-                                    <label class="nombre" for="">Nombre: </label>
+                                  <!--  <label class="nombre" for="">Nombre: </label>
                                     <input class="cajaNombre" type="text" name="nombre" value="{{data.0}}">
                                     <br>
                                     <label class="apellido" for="">Apellido: </label>
@@ -62,7 +62,29 @@
                                     <br>
                                     <label class="contrasena" for="">Contraseña: </label>
                                     <input class="cajaContrasna" type="password" name="password" value="{{data.4}}">
-                                </form>
+                                    -->
+                                    <label class="nombre" for="">Nombre: </label>
+                                    <input class="cajaNombre uno" type="text" value="{{data.0}}">
+                                    <input class="no dos" type="text"  name="nombre" value="">
+                                    <br>
+                                    <label class="cajaNombre" for="">Apellido: </label>
+                                    <input class="cajaCargo tres" type="text" value="{{data.1}}">
+                                    <input class="no cuatro" type="text" name="apellido" value="">
+                                    <br>
+                                    <label class="cargo" for="">Cargo: </label>
+                                    <input class="cajaCargo " type="text" value="Docente" disabled="">
+                                    <br>
+                                    <label class="id" for="">Id: </label>
+                                    <input class="cajaId cinco" type="text" value="{{data.2}}">
+                                    <input class="no seis" type="text" name="id" value="">
+                                    <br>
+                                    <label class="correo" for="">Correo: </label>
+                                    <input class="cajaCorreo siete" type="text" value="{{data.3}}">
+                                    <input class="no  ocho" type="text" name="email" value="">
+                                    <br>
+                                    <label class="contrasena" for="">Contraseña: </label>
+                                    <input class="cajaContrasna nueve" type="text" value="{{data.4}}" >
+                                    <input class="no  diez" name="password" value="">
                             </div>
                         </div> 
                     </div>
@@ -74,7 +96,7 @@
                        
                         <div class="contenedorBoton">
                             <a class="contenedorMenu" href="menu" title="menú">
-                                <button class="boton" href="menu"> <strong>Guardar</strong></button>
+                                <button class="boton"> <strong>Guardar</strong></button>
                             </a>
                         </div>
                            
@@ -84,11 +106,10 @@
                             </a>
                         </div>
                     </div>
-                   
+                                </form> 
                 </div>
             </div>
         </main>
-        <script src="{{ url_for('static', filename='directivos/js/custom.js') }}"></script>
-        <script src="{{ url_for('static', filename='directivos/js/barba.min.js') }}"></script>
+       <script src="{{ url_for('static', filename='directivos/js/perfil.js') }}"></script>
     </body>
 </html>

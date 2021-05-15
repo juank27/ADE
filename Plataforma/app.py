@@ -61,11 +61,15 @@ def login():
 		registro = dataemail[0]
 		print(registro)
 		print(dataemail[0])
+		print(datapass[0])
 
-		if len(dataemail) != 0 and len(datapass) != 0:
-			session['info'] = registro
-			#return render_template('docentes/menuD.html')
-			return redirect(url_for('docente.menu'))
+		if len(dataemail[0]) != 0 and len(datapass[0]) != 0:
+			if (datapass[0][3] == email):
+				session['info'] = registro
+				#return render_template('docentes/menuD.html')
+				return redirect(url_for('docente.menu'))
+			else:
+				flash('Datos Incorrectos')		
 		else :
 			flash('Datos Incorrectos')
 	return redirect(url_for('inicio.inicioSesion'))
@@ -188,11 +192,11 @@ def editPerfil():
 							contrasena_docente = %s,
 							num_id_docente = %s
 						WHERE num_id_docente = %s """,
-						(name,apellido, email, password, iid, iidnum,))
+						(name,apellido, email, password, idd, iidnum,))
 		mysql.connection.commit()
 		#creo la session
 		session['info'] = newData
-	return redirect(url_for('docente.menu'))
+	return redirect(url_for('docente.perfil'))
 
 @app.route('/registroMateria', methods=['POST', 'GET'])
 def registroMateria():
