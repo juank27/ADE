@@ -1,5 +1,3 @@
-
-
 .contenedor_p{
  
    
@@ -139,8 +137,6 @@
     cursor: pointer;
 }
 
-
-
 .contenedorGifSol{
     width: 100px;
     height: 100px;
@@ -153,4 +149,7 @@
     height: 100px;
 }
 
-
+#intento{
+    width: 0;
+    visibility: hidden;
+}

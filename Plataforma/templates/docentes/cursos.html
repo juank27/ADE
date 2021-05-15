@@ -46,9 +46,11 @@
                     <div class="botonTituloListas">
                         <div class="contenedorBotonVerListaSombra">
                             <div class="contenedorBotonVerLista">
-                                <button class="botonVerLista">
-                                    <img class="imgVerLista" src="{{ url_for('static', filename='directivos/img/47.png') }}"alt="">
-                                </button>
+                                <form class="formCursos" action="/cargarcursos" method="POST">
+                                    <button class="botonVerLista">
+                                        <img class="imgVerLista" src="{{ url_for('static', filename='directivos/img/47.png') }}"alt="">
+                                    </button>
+                                </form>
                             </div>
                         </div>
                         <div class="tituloVerLista">
@@ -63,7 +65,7 @@
                    </div>
                     <div  class="crear_cursos">
                         <div title="CERRAR" class="cerrar"><i class="fas fa-times-circle"></i></div>
-                        <iframe class="crear_cursos2" scrolling="no" src="crear_cursos" >
+                    <iframe class="crear_cursos2" scrolling="no" src="crear_cursos" >
                         
                     </iframe>
                    

@@ -159,6 +159,13 @@
     margin-top: -2%;
     margin-left: -2%;
 }
+.formCursos{
+  height: 100%;
+  width: 100%;
+  border-radius: 4%;
+  margin-top: -2%;
+  margin-left: -2%;
+}
 
 .botonVerLista{
     height: 100%;

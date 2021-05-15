@@ -15,7 +15,7 @@
 
                     <div class="encabezadop">
                             <div  class="contenedorImgPrincipal" href="foto" >
-                                <img  id="f" class="imgPrincial" src="{{ url_for('static', filename='directivos/img/0.png') }}" alt="">
+                                <img  id="f" class="imgPrincial" src={{data.5}} alt="">
                                 <a href="foto" title="Editar avatar" style="margin-left:100px; font-size:25px; cursor: pointer; color: #fff"><i class="fas fa-pencil-alt"></i></a>
                             </div>
       
@@ -44,24 +44,24 @@
                         <div class="contenedorFormulario1">
                             <div class="contenedorFormulario2">
                               
-                                <form class="formulario" action="">
+                                <form class="formulario" action="/editPerfil" method="POST">
                                     <label class="nombre" for="">Nombre: </label>
-                                    <input class="cajaNombre" type="text" value="{{data.0}}">
+                                    <input class="cajaNombre" type="text" name="nombre" value="{{data.0}}">
                                     <br>
                                     <label class="apellido" for="">Apellido: </label>
-                                    <input class="cajaApellido" type="text" value="{{data.1}}">
+                                    <input class="cajaApellido" type="text" name="apellido" value="{{data.1}}">
                                     <br>
                                     <label class="cargo" for="">Cargo: </label>
                                     <input class="cajaCargo" type="text" value="Docente" disabled="">
                                     <br>
                                     <label class="id" for="">Id: </label>
-                                    <input class="cajaId" type="text" value="{{data.2}}">
+                                    <input class="cajaId" type="text" name="id" value="{{data.2}}">
                                     <br>
                                     <label class="correo" for="">Correo: </label>
-                                    <input class="cajaCorreo" type="text" value="{{data.3}}">
+                                    <input class="cajaCorreo" type="text" name="email" value="{{data.3}}">
                                     <br>
                                     <label class="contrasena" for="">Contraseña: </label>
-                                    <input class="cajaContrasna" type="password" value="{{data.4}}">
+                                    <input class="cajaContrasna" type="password" name="password" value="{{data.4}}">
                                 </form>
                             </div>
                         </div> 

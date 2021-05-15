@@ -1,5 +1,6 @@
 import flask
 import threading
+import random
 from flask import render_template,request, copy_current_request_context, flash,redirect, url_for
 from flask_mysqldb import MySQL
 from flask_mail import Mail,Message
@@ -51,7 +52,7 @@ def login():
 		email = email.lower()
 
 		cur = mysql.connection.cursor()
-		cur.execute("""SELECT nombre_docente,apellido_docente,num_id_docente,correo_docente,contrasena_docente FROM docente WHERE correo_docente = %s""",
+		cur.execute("""SELECT nombre_docente,apellido_docente,num_id_docente,correo_docente,contrasena_docente,avatar_docente FROM docente WHERE correo_docente = %s""",
 						(email,))
 		dataemail = cur.fetchall()
 		cur.execute("""SELECT * FROM docente WHERE contrasena_docente = %s""",
@@ -82,7 +83,8 @@ def registroDocente():
 
 		nombre = nombre.title()
 		apellido = apellido.title()
-		registro = [nombre, apellido, idnum, email, password]
+		img = '/static/directivos/img/0.png'
+		registro = [nombre, apellido, idnum, email, password, img]
 		cur = mysql.connection.cursor()
 		cur.execute("""SELECT num_id_docente FROM docente WHERE num_id_docente = %s """,
 						(idnum,))
@@ -95,7 +97,7 @@ def registroDocente():
 		if len(data) == 0 and len(dataemail) == 0:
 			if password == verifpassword :
 				cur.execute('INSERT INTO docente (nombre_docente, apellido_docente, correo_docente, num_id_docente, contrasena_docente, avatar_docente) VALUES (%s,%s,%s,%s,%s,%s)',
-									(nombre,apellido,email,idnum,password,'directivos/img/4.png'))
+									(nombre,apellido,email,idnum,password,img))
 				mysql.connection.commit()
 				cur.close()
 				print(registro)
@@ -136,6 +138,106 @@ def foto():
 	print(dataa)
 	return render_template('docentes/foto.html', avatar=dataa)
 
+@app.route('/guardarAvatar', methods=['POST', 'GET'])
+def guardarAvatar():
+	if request.method == 'POST':
+		if 'info' in session:
+			info = session['info']
+
+		avatar = request.form['imageen']
+		iid = info[2]
+		cur = mysql.connection.cursor()
+		cur. execute(""" UPDATE docente SET avatar_docente = %s WHERE num_id_docente = %s""",
+						(avatar,iid,))
+		mysql.connection.commit()
+
+		cur.execute("""SELECT nombre_docente,apellido_docente,num_id_docente,correo_docente,contrasena_docente,avatar_docente FROM docente WHERE num_id_docente = %s""",
+						(iid,))
+		print('consulta')
+		datanew = cur.fetchall()
+		print(datanew)
+		
+
+		print('abrir sesion')	
+		#creo la session
+		session['info'] = datanew[0]
+	return redirect(url_for('docente.perfil'))
+
+@app.route('/editPerfil', methods=['POST', 'GET'])
+def editPerfil():
+	if request.method == 'POST':
+		if 'info' in session:
+			info = session['info']
+
+		iidnum = info[2]
+		session.pop('info')
+
+		print('id de la sesion')
+		print(iidnum)
+		name = request.form['nombre']
+		apellido = request.form['apellido']
+		idd = request.form['id']
+		email = request.form['email']
+		password = request.form['password']
+		newData = [name,apellido,idd,email,password,info[5]]
+		cur = mysql.connection.cursor()
+		cur.execute(""" UPDATE docente 
+						SET nombre_docente = %s,
+							apellido_docente = %s,
+							correo_docente = %s,
+							contrasena_docente = %s,
+							num_id_docente = %s
+						WHERE num_id_docente = %s """,
+						(name,apellido, email, password, iid, iidnum,))
+		mysql.connection.commit()
+		#creo la session
+		session['info'] = newData
+	return redirect(url_for('docente.menu'))
+
+@app.route('/registroMateria', methods=['POST', 'GET'])
+def registroMateria():
+	if request.method == 'POST':
+		if 'info' in session:
+			info = session['info']
+
+		img = request.form['imageen']
+		name = request.form['nameMateria']
+		print(name)
+		iid = info[2]
+		materiaaa = random.randint(100, 100000)
+		materiaa = 'Asignatura creada, \n Su código es: ' + str(materiaaa)
+		session['idMateria'] = materiaaa
+
+		cur = mysql.connection.cursor()
+		cur.execute("""SELECT id_docente FROM docente WHERE num_id_docente = %s """,
+						(iid,))
+		data =	cur.fetchall()
+		print(data)
+		iid = data[0]
+		cur.execute('INSERT INTO materia (id_materia, nombre_materia, id_docente, imgMateria) VALUES (%s,%s,%s,%s)', 
+									(materiaaa,name,iid,img))
+		mysql.connection.commit()
+		cur.close()
+		flash(materiaa)
+	return render_template('docentes/crear_asignatura.html')
+
+@app.route('/cargarcursos', methods=['POST', 'GET'])
+def cargarcursos():
+	if request.method == 'POST':
+		if 'info' in session:
+			info = session['info']
+		iid = info[2]
+		
+		cur = mysql.connection.cursor()
+		cur.execute("""SELECT id_docente FROM docente WHERE num_id_docente = %s """,
+						(iid,))
+		data =	cur.fetchall()	
+		iid = data[0]
+		cur.execute("""SELECT id_materia, nombre_materia, imgMateria FROM materia WHERE id_docente = %s """,
+						(iid,))
+		dataa =	cur.fetchall()	
+		print (dataa)
+	return render_template('docentes/listaDocentes.html', data = dataa)
 
 if __name__ == '__main__':
 	app.run(debug = True)

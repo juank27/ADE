@@ -32,7 +32,7 @@
 
 					<!--icono foto-->
 					<div style="margin-bottom: 20px;" title="Configuración Perfil">
-							<a href="perfil"><img class="fotoA " src="{{ url_for('static', filename='directivos/img/0.png') }}"></img></a>
+							<a href="perfil"><img class="fotoA " src={{data.2}}></img></a>
 							
 					</div>
 					<div style="cursor: pointer; margin-left: 1%; " title="Crear">
@@ -54,9 +54,10 @@
 
 					
 					<!--icono salir-->
-					<div title="Cerrar Sesión" class="iconos_contraidos contenedor " style="margin-top: 10%; margin-left: 1.5%; cursor: pointer;" href="/logout">
+					<form action="/logout" title="Cerrar Sesión" class="iconos_contraidos contenedor " style="margin-top: 10%; margin-left: 1%;">
 						<i class="fas fa-sign-out-alt"></i>
-					</div>
+						<input type="submit" value="EXIT" style="font-size: 13px; color: white;">
+					</form>
 						
 				</div>
 
@@ -77,7 +78,7 @@
 					
 					<div class="contenedor_foto" title="Configuración Perfil">
 						<a href="perfil">
-							<img class="foto" src="{{ url_for('static', filename='directivos/img/0.png') }}">
+							<img class="foto" src={{data.2}}>
 						</a>
 						
 						
@@ -123,13 +124,11 @@
 				</div>
 			
 			<!-- cerrar sesion-->
-					<div class="cerrar_sesion" href="/logout">
-						<form action="/logout" method="POST">
-							<imput class="elemetos_cerrarSesion" style="cursor: pointer; " href="/logout">
-								<!--<p class="text_cerrarsesion">Cerrar Sesión</p>-->
-								<input type="submit" name="" placeholder="Cerrar sesion" class="text_cerrarsesion">
-								<span><i class="fas fa-sign-out-alt"></i></span>
-							</imput>
+					<div class="cerrar_sesion">
+						<form class="elemetos_cerrarSesion" action="/logout" method="POST">
+							<!--<p class="text_cerrarsesion">Cerrar Sesión</p>-->
+							<input type="submit" name="" value="Cerrar sesion" class="text_cerrarsesion">
+							<span><i class="fas fa-sign-out-alt"></i></span>
 						</form>
 					</div>
 				</div>

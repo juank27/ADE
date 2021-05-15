@@ -15,7 +15,10 @@ def dataSession():
 	
 @docente.route('/perfil')
 def perfil():
-	info = dataSession()
+	#traigo la info de la session
+	if 'info' in session:
+		info = session['info']
+		print(info)
 	return render_template('docentes/perfil.html', data=info)
 
 
@@ -27,10 +30,10 @@ def menu():
 		infa = session['info']
 	else:
 		return render_template('principal/index.html')
-	info = dataSession()
-	name = info[0]
-	apellido = info[1]
-	datos = [name, apellido]
+	name = infa[0]
+	apellido = infa[1]
+	avatar = infa[5]
+	datos = [name, apellido, avatar]
 	return render_template('docentes/menuD.html', data=datos)
 
 @docente.route('/cursos')
@@ -44,8 +47,7 @@ def crear_cursos():
 	return render_template('docentes/crear_cursos.html')
 @docente.route('/crear_asignaturas')
 def crear_asignaturas():
-	name = '111235'
-	return render_template('docentes/crear_asignatura.html', nombre = name)
+	return render_template('docentes/crear_asignatura.html')
 @docente.route('/listaDocentes')
 def listaDocentes():
 	return render_template('docentes/listaDocentes.html')
@@ -58,7 +60,6 @@ def docentes():
 @docente.route('/estudiantes')
 def estudiante():
 	return render_template('docentes/estudiantes.html')
-
 @docente.route('/servicios')
 def servicios():
 	return render_template('docentes/estadisticaServicios.html')

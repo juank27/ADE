@@ -15,25 +15,23 @@
         <main>
             <div class="contenedor_1">
                 <div class="contenedor_2">
+                    <div class="volver">
+                       <div style="float: right;">
+                           <a title="volver" style="text-decoration: none; color: #069CCC;" href="cursos"><i class="fas fa-times-circle"></i></a> 
+                       </div>
+                    </div>
                     <!--Contenedor de encabezado Titulo y buscador-->
                     <div class="contenedorEncabezado">
-
                         <!--Contenedor titulo de docentes-->
                         <div class="contenedorTituloDocente">
-                            <h1>Asiganaturas</h1>
-                        </div>
-                      <!--Contenedor buscador-->
-                        <div class="contenedorBusqueda">
-                            <form class="formularioBuscador" action="">
-                                <input class="buscador" type="search" placeholder="Buscar">
-                                <div class="buscar"><i class="fas fa-search"></i></div>
-                            </form>
+                            <h1>Asignaturas</h1>
                         </div>
                     </div>
                     
                     <!--Contenedor de la lista de docentes-->
                     <div class="contenedorLista">
                         <table>
+                            <!--
                             <tr >
                                 <td><img src="{{ url_for('static', filename='directivos/img/52.png') }}"cellpadding ="150%"alt=""></td>
                                 <td>Sistemas-704 <br><a class="enlaces" href="estudiantes"><i class="fas fa-users"></i>estudiantes</a></td>
@@ -42,14 +40,19 @@
                                 <td><img src="{{ url_for('static', filename='directivos/img/52.png') }}"cellpadding ="150%"alt=""></td>
                                 <td>Sistemas-703<br><a class="enlaces" href="estudiantes"><i class="fas fa-users"></i>estudiantes</a></a></td>
                             </tr>   
+                            -->
+                            {% for dataa in data%}
+                            <tr>
+                                <td><img src={{dataa.2}} cellpadding ="150%"alt=""></td>
+                                <td>{{dataa.1}} - {{dataa.0}}<br><a class="enlaces" href="estudiantes"><i class="fas fa-users"></i>estudiantes</a></td>
 
-                            
+                            </tr>
+                            {% endfor%}
                               
  
                         </table>
                     </div>
                     <!--Fin contenedor de la lista de docentes-->
-
                 </div>
             </div>
         </main>

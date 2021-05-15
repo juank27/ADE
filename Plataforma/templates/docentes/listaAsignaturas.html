@@ -22,27 +22,14 @@
                     <!--Contenedor de la lista de docentes-->
                     <div class="contenedorLista">
                         <table>
+            
+                            {% for dataa in data%}
                             <tr>
-                                <td><img src="directivos-img/43.png" cellpadding ="150%"alt=""></td>
-                                <td>Matemáticas</td>
-                            </tr>    
-
-                            <tr>
-                                <td><img src="directivos-img/44.png" alt=""></td>
-                                <td>Español</td>
-                            </tr>  
-
-                            <tr>
-                                <td><img src="directivos-img/45.png" alt=""></td>
-                                <td>Informática</td>
-                            </tr>  
-                            <tr>
-                                <td><img src="directivos-img/46.png" alt=""></td>
-                                <td>Artes</td>
-                            </tr>  
-
-                            
- 
+                                <td><img src={{dataa.2}} cellpadding ="150%"alt=""></td>
+                                <td>{{dataa.1}} - {{dataa.0}}</td>
+                            </tr>
+                            {% endfor%}
+                       
                         </table>
                     </div>
                     <!--Fin contenedor de la lista de docentes-->
